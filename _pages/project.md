@@ -45,21 +45,21 @@ This toolkit is designed to answer, at a glance:
 
 ## Modules
 
-### -- Position Monitoring (CLMM / LP / MM)
+### 1. Position Monitoring (CLMM / LP / MM)
 - Live state: in-range/out-of-range, range distance, inventory composition
 - Operational workflow: rebalance triggers, harvest cadence, deployment sizing
 - “MM mindset”: inventory risk, price range risk, fee volatility
 
 **Go deeper →** [Position Monitoring](/testDeFi/project/positions/)
 
-### - Risk Overview
+### 2. Risk Overview
 - Lending/borrowing health: LTV monitoring, liquidation distance, collateral concentration
 - CLMM risk: out-of-range probability cues, inventory drift, exposure by token
 - Portfolio exposure: token, protocol, chain, stablecoin issuer, bridge/oracle dependencies
 
 **Go deeper →** [Risk Overview](/testDeFi/project/category-1/)
 
-### - Performance Overview
+### 3. Performance Overview
 - Net performance over time: **fees – IL – funding – borrow cost**
 - Per-position scorecards: realized vs unrealized, volatility regimes, fee consistency
 - Strategy lens: range width, rebalancing frequency, fee-to-risk efficiency
