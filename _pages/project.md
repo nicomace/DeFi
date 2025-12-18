@@ -8,6 +8,6 @@ permalink: /project/
 
 ## Choose a category
 
-- [Category 1](/testDeFi/project/category-1/)
-- [Category 2](/category-2/)
-- [Category 3](/category-3/)
+- [DeFi Activity](/testDeFi/project/category-1/)
+- [LP Risk Overview](/testDeFi/project/category-2/)
+- [LP Perf Overview](/testDeFi/project/category-3/)
