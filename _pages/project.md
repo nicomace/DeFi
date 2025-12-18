@@ -8,6 +8,6 @@ permalink: /project/
 
 ## Choose a category
 
-- [Category 1](category-1/)
+- [Category 1](https://nicomace.github.io/project/category-1/)
 - [Category 2](/category-2/)
 - [Category 3](/category-3/)
