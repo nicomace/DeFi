@@ -1,6 +1,7 @@
 ---
-title: "Posts by Tag"
-permalink: /tags/
-layout: tags
-author_profile: true
+title: "Category 1"
+permalink: /category-1/
+layout: single
 ---
+
+Contenu de la catégorie 1.
