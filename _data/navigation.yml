@@ -5,7 +5,7 @@ main:
     url: /project/
     children:
       - title: "Category 1"
-        url: /project/category-1/
+        url: /category-1/
       - title: "Category 2"
         url: /category-2/
   - title: "About"
