@@ -50,21 +50,21 @@ This toolkit is designed to answer, at a glance:
 - CLMM risk: out-of-range probability cues, inventory drift, exposure by token
 - Portfolio exposure: token, protocol, chain, stablecoin issuer, bridge/oracle dependencies
 
-**Go deeper →** [Risk Overview](/project/risk/)
+**Go deeper →** [Risk Overview](/testDeFi/project/category-1/)
 
 ### 2) Performance Overview
 - Net performance over time: **fees – IL – funding – borrow cost**
 - Per-position scorecards: realized vs unrealized, volatility regimes, fee consistency
 - Strategy lens: range width, rebalancing frequency, fee-to-risk efficiency
 
-**Go deeper →** [Performance Overview](/project/performance/)
+**Go deeper →** [Performance Overview](/testDeFi/project/performance/)
 
 ### 3) Position Monitoring (CLMM / LP / MM)
 - Live state: in-range/out-of-range, range distance, inventory composition
 - Operational workflow: rebalance triggers, harvest cadence, deployment sizing
 - “MM mindset”: inventory risk, price range risk, fee volatility
 
-**Go deeper →** [Position Monitoring](/project/positions/)
+**Go deeper →** [Position Monitoring](/testDeFi/project/positions/)
 
 ---
 
