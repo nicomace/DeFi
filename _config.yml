@@ -25,6 +25,8 @@ minimal_mistakes_skin: "air"
 search: true
 
 # Build settings
+url: "https://nicomace.github.io"
+baseurl: "/testDeFi"
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
