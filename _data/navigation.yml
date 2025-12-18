@@ -5,3 +5,9 @@ main:
     url: /project/
   - title: "About"
     url: /about/
+    children:
+    title: "Catgeorie 1"
+    url: /category-1/
+    title: "Catgeorie 2"
+    url: /category-2/
+    
