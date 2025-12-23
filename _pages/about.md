@@ -13,7 +13,7 @@ toc: false
   .layout--single .archive, 
   .layout--single .page__content, 
   .layout--single .page__inner-wrap {
-    width: 100% !important;
+    width: 80% !important;
     max-width: 100% !important;
     padding-right: 0 !important;
   }
