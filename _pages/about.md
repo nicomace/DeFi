@@ -13,14 +13,14 @@ toc: false
   .layout--single .archive, 
   .layout--single .page__content, 
   .layout--single .page__inner-wrap {
-    width: 80% !important;
+    width: 100% !important;
     max-width: 100% !important;
     padding-right: 0 !important;
   }
 
   /* Si vous voulez aussi réduire l'espace blanc en haut */
   .page {
-    width: 100% !important;
+    width: 80% !important;
     padding-right: 0 !important;
   }
 </style>
