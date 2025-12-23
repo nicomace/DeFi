@@ -1,6 +1,4 @@
 main:
-  - title: "Presentation"
-    url: /presentation/
   - title: "Project"
     url: /project/
     children:
