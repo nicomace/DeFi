@@ -5,6 +5,7 @@ layout: single
 classes: wide
 author: false
 author_profile: false
+sidebar: false
 toc: true
 toc_label: "On this page"
 toc_icon: "list"
