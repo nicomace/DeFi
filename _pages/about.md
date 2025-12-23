@@ -26,14 +26,9 @@ toc: false
 </style>
 
 
-<iframe
-  src="/testDeFi/assets/images/CryptoCV.pdf"
-  width="100%"
-  height="1100"
-  style="border:0;">
-</iframe>
+## Curriculum Vitae
 
-<p>
+<p class="cv-actions">
   <a class="btn btn--primary" href="/testDeFi/assets/cv/CryptoCV.pdf" target="_blank" rel="noopener">
     Open PDF
   </a>
@@ -41,5 +36,14 @@ toc: false
     Download
   </a>
 </p>
+
+<div class="cv-container">
+  <iframe
+    src="/testDeFi/assets/cv/CrypoCV.pdf"
+    loading="lazy"
+    title="Nicolas Macé CV">
+  </iframe>
+</div>
+
 
 ---
