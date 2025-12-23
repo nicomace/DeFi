@@ -1,8 +1,27 @@
 ---
-permalink: /about/
 title: "About"
+permalink: /about/
+layout: single
+classes: wide
+author_profile: false
+sidebar: false
+toc: false
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+<iframe
+  src="/testDeFi/assets/images/CryptoCV.pdf"
+  width="100%"
+  height="1100"
+  style="border:0;">
+</iframe>
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+<p>
+  <a class="btn btn--primary" href="/testDeFi/assets/cv/Nicolas_Mace_CV.pdf" target="_blank" rel="noopener">
+    Open PDF
+  </a>
+  <a class="btn btn--info" href="/testDeFi/assets/cv/Nicolas_Mace_CV.pdf" download>
+    Download
+  </a>
+</p>
+
+---
