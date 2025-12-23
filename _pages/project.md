@@ -65,7 +65,7 @@ This toolkit is designed to answer, at a glance:
 - CLMM risk: out-of-range probability cues, inventory drift, exposure by token
 - Portfolio exposure: token, protocol, chain, stablecoin issuer, bridge/oracle dependencies
 
-**Go deeper →** [Risk Overview](/testDeFi/project/riskoverview//)
+**Go deeper →** [Risk Overview](/testDeFi/project/risk/)
 
 ### 3. Performance Overview
 - Net performance over time: **fees – IL – funding – borrow cost**
