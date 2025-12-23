@@ -3,6 +3,7 @@ title: "DeFi Risk Monitoring Toolkit"
 permalink: /project/
 layout: single
 classes: wide
+author: false
 author_profile: false
 toc: true
 toc_label: "On this page"
