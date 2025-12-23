@@ -6,9 +6,7 @@ classes: wide
 author: false
 author_profile: false
 sidebar: false
-toc: true
-toc_label: "On this page"
-toc_icon: "list"
+toc: false
 header:
   overlay_color: "#000"
   overlay_filter: "0.45"
@@ -16,6 +14,9 @@ header:
   # overlay_image: /assets/images/toolkit/cover-wide.png
 excerpt: "A practical toolkit to monitor DeFi risk exposure, CLMM positions, and performance over time — built with a market-maker mindset."
 ---
+
+{% include toc title="On this page" icon="list" %}
+
 
 {% capture disclaimer %}
 **Disclaimer**: This project is for educational and personal analytics purposes. It is **not** financial advice.
