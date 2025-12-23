@@ -2,6 +2,10 @@
 title: "Performance Overview"
 permalink: /project/performance/
 layout: single
+classes: wide
+author: false
+author_profile: false
+sidebar: false
 ---
 
 <style>
