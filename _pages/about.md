@@ -29,17 +29,17 @@ toc: false
 ## Curriculum Vitae
 
 <p class="cv-actions">
-  <a class="btn btn--primary" href="/testDeFi/assets/cv/CryptoCV.pdf" target="_blank" rel="noopener">
+  <a class="btn btn--primary" href="/testDeFi/assets/CryptoCV.pdf" target="_blank" rel="noopener">
     Open PDF
   </a>
-  <a class="btn btn--info" href="/testDeFi/assets/cv/CryptoCV.pdf" download>
+  <a class="btn btn--info" href="/testDeFi/assets/CryptoCV.pdf" download>
     Download
   </a>
 </p>
 
 <div class="cv-container">
   <iframe
-    src="/testDeFi/assets/cv/CrypoCV.pdf"
+    src="/testDeFi/assets/CryptoCV.pdf"
     loading="lazy"
     title="Nicolas Macé CV">
   </iframe>
