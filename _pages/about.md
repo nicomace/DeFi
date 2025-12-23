@@ -20,7 +20,7 @@ toc: false
 
   /* Si vous voulez aussi réduire l'espace blanc en haut */
   .page {
-    width: 80% !important;
+    width: 100% !important;
     padding-right: 0 !important;
   }
 </style>
