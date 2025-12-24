@@ -38,6 +38,10 @@ sidebar: false
 
 Particularly suited for range-based liquidity provision, delta-sensitive LP, and fee-driven market making.
 
+<figure>
+  <img src="/testDeFi/assets/images/positions/curr_positions.png" alt="Positions Dashboard">
+  <figcaption><em>Current active positions</em></figcaption>
+</figure>
 
 <figure>
   <img src="/testDeFi/assets/images/positions/histo_positions.png" alt="Positions Dashboard">
@@ -47,9 +51,4 @@ Particularly suited for range-based liquidity provision, delta-sensitive LP, and
 <figure>
   <img src="/testDeFi/assets/images/positions/histo_positions1.png" alt="Positions Dashboard">
   <figcaption><em>Liquidity allocation + compute inventory</em></figcaption>
-</figure>
-
-<figure>
-  <img src="/testDeFi/assets/images/positions/curr_positions.png" alt="Positions Dashboard">
-  <figcaption><em>Current active positions</em></figcaption>
 </figure>
