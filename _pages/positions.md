@@ -52,7 +52,7 @@ Particularly suited for range-based liquidity provision, delta-sensitive LP, and
   <img
     src="/testDeFi/assets/images/positions/histo_positions1.png"
     alt="Positions Dashboard"
-    style="max-width: 350px; width: 100%; height: auto;"
+    style="max-width: 400px; width: 100%; height: auto;"
   >
   <figcaption><em>Liquidity allocation + compute inventory</em></figcaption>
 </figure>
