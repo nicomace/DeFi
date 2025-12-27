@@ -26,17 +26,17 @@ sidebar: false
 </style>
 
 
-Active DeFi Position Monitoring (CLMM & LP)
+**TL;DR**  
+> This module treats CLMM LP positions as **market making strategies**, not yield farming.  
+> It monitors:
+> - **in-range / out-of-range status** and distance to bounds  
+> - **liquidity allocation and inventory drift** between assets  
+> - **operational signals** to rebalance, resize, or exit positions  
+>
+> The goal is to maintain capital efficiency and control inventory risk while optimizing fee generation.
 
-- Tracking of active liquidity positions across Concentrated Liquidity Market Makers (CLMMs)
-(e.g. Uniswap v3-style mechanics)
-- Detection of:
-- In-range vs out-of-range status
-- Capital currently productive vs idle
-- Exposure asymmetry between base and quote assets
-- Monitoring of inventory drift, critical for market making strategies
 
-Particularly suited for range-based liquidity provision, delta-sensitive LP, and fee-driven market making.
+
 
 The purpose is to get a quick view on the current active liquidity positions across Concentrated Liquidity Market Makers (CLMMs).
 In order to maximize clarity, 2 different sheets are used to get:
