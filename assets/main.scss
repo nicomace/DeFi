@@ -23,3 +23,16 @@
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
+
+/* ===== Positions page ===== */
+
+.positions-page .img-medium {
+  max-width: 850px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.positions-page .img-medium img {
+  width: 100%;
+  height: auto;
+}
