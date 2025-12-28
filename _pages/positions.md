@@ -1,5 +1,5 @@
 ---
-title: "Positions"
+title: "Positions Monitoring"
 permalink: /project/positions/
 layout: single
 classes: wide
