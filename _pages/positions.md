@@ -1,6 +1,6 @@
 ---
 title: "Positions Monitoring"
-permalink: /testDeFi/project/positions/
+permalink: /project/positions/
 layout: single
 classes: wide
 author: false
