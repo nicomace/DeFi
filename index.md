@@ -33,7 +33,6 @@ And here is the focus of the tool I am building: monitoring risk to optimize the
 
 This project was created to bring a more **disciplined, risk-oriented approach** to DeFi strategies, inspired by institutional practices.
 
----
 
 ## Current focus
 
@@ -45,7 +44,6 @@ This project was created to bring a more **disciplined, risk-oriented approach**
 - Following performance over time with a **net PnL approach**
 - Understanding portfolio-level exposure across tokens and protocols
 
----
 
 ## Project
 
@@ -55,7 +53,6 @@ You can explore the project here:
 
 👉 [DeFi Risk Monitoring Toolkit](/testDeFi/project/)
 
----
 
-
+<br>
 Feel free to reach out if you’re interested in **DeFi risk, market making, or portfolio analytics**.
