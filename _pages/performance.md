@@ -65,7 +65,8 @@ To compute the overall realized return, positions must be closed.
 Capturing fees from the Fees layer and processing the inventory drift between open / close, we can finally compute the net outcome of this position.
 
 Meanwhile Duration is used to measure the daily performance of the position. 
---> Daily return allows performance comparison across positions with different lifetimes.
+<br>
+-> Daily return allows performance comparison across positions with different lifetimes.
 
 This module shows us if the position was sufficiently compensated for the associated risk.
 
