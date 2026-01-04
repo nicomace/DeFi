@@ -39,29 +39,39 @@
 
 
 
-/* Forcer l'affichage du menu déroulant au survol */
-.masthead__menu-item:hover .masthead__menu-dropdown {
+
+
+/* Style pour le dropdown */
+.masthead__menu-item {
+  position: relative;
+}
+
+.sub-menu {
+  display: none; /* Cache le menu par défaut */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  list-style: none;
+  z-index: 99;
+  min-width: 180px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.sub-menu li {
+  margin-bottom: 5px;
   display: block;
 }
 
-.masthead__menu-dropdown {
-  display: none;
-  position: absolute;
-  background-color: #fff;
-  min-width: 150px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  padding: 10px;
-  margin-top: 0;
-  list-style: none;
-}
-
-.masthead__menu-dropdown li {
-  margin: 5px 0;
-}
-
-.masthead__menu-dropdown a {
+.sub-menu a {
+  padding: 5px 10px;
+  display: block;
   color: #333 !important;
-  text-decoration: none;
+}
+
+/* Affiche au survol */
+.masthead__menu-item:hover .sub-menu {
   display: block;
 }
