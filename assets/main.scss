@@ -41,50 +41,48 @@
 
 
 
-/* Conteneur parent */
+/* 1. On prépare le parent pour le positionnement absolu */
 .masthead__menu-item {
-  position: relative;
-  display: inline-block; /* Aligne Project et About horizontalement */
-  margin-right: 20px;
+  position: relative !important;
+  display: inline-block !important; /* Force l'alignement horizontal de Project et About */
 }
 
-/* Le menu caché */
+/* 2. On configure le sous-menu pour qu'il flotte */
 .sub-menu {
-  display: none; 
-  position: absolute;
-  top: 100%;       /* Juste en dessous de Project */
-  left: 0;
-  background-color: #1d1d1d; /* Fond noir pour matcher votre image */
-  border: 1px solid #444;
-  padding: 10px 0;
-  list-style: none;
-  z-index: 1000;
-  min-width: 180px;
-  text-align: left; /* Aligne le texte à gauche à l'intérieur */
+  display: none;             /* Caché par défaut */
+  position: absolute !important; 
+  top: 100% !important;      /* Juste sous le texte Project */
+  left: 0 !important;
+  background-color: #111 !important; /* Noir profond */
+  padding: 15px !important;
+  margin: 0 !important;
+  list-style: none !important;
+  z-index: 9999 !important;  /* Passe devant tout le reste */
+  min-width: 200px !important;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.5);
 }
 
-/* Les liens à l'intérieur du menu */
+/* 3. On s'assure que les éléments internes s'empilent verticalement */
 .sub-menu li {
-  display: block;   /* Force l'empilement vertical dans le dropdown */
-  margin: 0;
-  width: 100%;
+  display: block !important;
+  margin: 10px 0 !important;
+  width: 100% !important;
 }
 
 .sub-menu a {
-  padding: 8px 20px;
-  display: block;
   color: #fff !important;
-  font-size: 0.9em;
-  text-decoration: none;
-  border: none !important; /* Enlever le soulignement rose si présent */
+  text-decoration: none !important;
+  font-size: 0.9em !important;
+  display: block !important;
+  border: none !important; /* Enlève la barre rose sous chaque lien */
 }
 
-/* Effet de survol sur les sous-liens */
-.sub-menu a:hover {
-  background-color: #333;
-}
-
-/* L'action magique : Afficher au survol */
+/* 4. L'ACTION AU SURVOL */
 .masthead__menu-item:hover .sub-menu {
-  display: block;
+  display: block !important; /* Affiche le menu quand on survole Project */
+}
+
+/* 5. Optionnel : effet de survol sur les sous-liens */
+.sub-menu a:hover {
+  color: #e63946 !important; /* Le rose pour le lien survolé */
 }
