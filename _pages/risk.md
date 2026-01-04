@@ -1,6 +1,6 @@
 ---
 title: "Risk Overview"
-permalink: /testDeFi/project/risk/
+permalink: /project/risk/
 layout: single
 classes: wide
 author: false
