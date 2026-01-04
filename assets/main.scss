@@ -41,48 +41,59 @@
 
 
 
-/* 1. On prépare le parent pour le positionnement absolu */
+/* --- CORRECTION DROPDOWN NAVIGATION --- */
+
+/* 1. On empêche le Flexbox de casser l'alignement */
+.greedy-nav .visible-links {
+  display: flex !important;
+  flex-direction: row !important;
+  overflow: visible !important; /* Crucial pour voir le menu dépasser */
+}
+
+/* 2. Positionnement du parent */
 .masthead__menu-item {
   position: relative !important;
-  display: inline-block !important; /* Force l'alignement horizontal de Project et About */
+  display: block !important;
 }
 
-/* 2. On configure le sous-menu pour qu'il flotte */
-.sub-menu {
-  display: none;             /* Caché par défaut */
-  position: absolute !important; 
-  top: 100% !important;      /* Juste sous le texte Project */
+/* 3. On force le sous-menu à "sortir" du flux (Floating) */
+ul.sub-menu {
+  display: none !important; /* Caché par défaut */
+  position: absolute !important;
+  top: 100% !important;
   left: 0 !important;
-  background-color: #111 !important; /* Noir profond */
-  padding: 15px !important;
+  width: 220px !important;
+  background-color: #111 !important; /* Fond noir */
+  z-index: 9999 !important;
   margin: 0 !important;
+  padding: 10px 0 !important;
   list-style: none !important;
-  z-index: 9999 !important;  /* Passe devant tout le reste */
-  min-width: 200px !important;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5) !important;
 }
 
-/* 3. On s'assure que les éléments internes s'empilent verticalement */
-.sub-menu li {
+/* 4. On s'assure que les liens internes ne flottent PAS entre eux */
+ul.sub-menu li {
   display: block !important;
-  margin: 10px 0 !important;
   width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-.sub-menu a {
-  color: #fff !important;
-  text-decoration: none !important;
-  font-size: 0.9em !important;
+ul.sub-menu li a {
+  padding: 10px 20px !important;
   display: block !important;
-  border: none !important; /* Enlève la barre rose sous chaque lien */
+  color: #fff !important;
+  font-size: 0.9rem !important;
+  border-bottom: none !important; /* Enlève la ligne rose par défaut */
 }
 
-/* 4. L'ACTION AU SURVOL */
-.masthead__menu-item:hover .sub-menu {
-  display: block !important; /* Affiche le menu quand on survole Project */
+/* 5. AFFICHAGE AU SURVOL */
+.masthead__menu-item:hover ul.sub-menu {
+  display: block !important;
 }
 
-/* 5. Optionnel : effet de survol sur les sous-liens */
-.sub-menu a:hover {
-  color: #e63946 !important; /* Le rose pour le lien survolé */
+/* Effet au survol des liens du menu */
+ul.sub-menu li a:hover {
+  background-color: #333 !important;
+  color: #ffb6c1 !important; /* Rose clair au survol */
 }
