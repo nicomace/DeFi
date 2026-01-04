@@ -41,37 +41,50 @@
 
 
 
-/* Style pour le dropdown */
+/* Conteneur parent */
 .masthead__menu-item {
   position: relative;
+  display: inline-block; /* Aligne Project et About horizontalement */
+  margin-right: 20px;
 }
 
+/* Le menu caché */
 .sub-menu {
-  display: none; /* Cache le menu par défaut */
+  display: none; 
   position: absolute;
-  top: 100%;
+  top: 100%;       /* Juste en dessous de Project */
   left: 0;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  padding: 10px;
+  background-color: #1d1d1d; /* Fond noir pour matcher votre image */
+  border: 1px solid #444;
+  padding: 10px 0;
   list-style: none;
-  z-index: 99;
+  z-index: 1000;
   min-width: 180px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: left; /* Aligne le texte à gauche à l'intérieur */
 }
 
+/* Les liens à l'intérieur du menu */
 .sub-menu li {
-  margin-bottom: 5px;
-  display: block;
+  display: block;   /* Force l'empilement vertical dans le dropdown */
+  margin: 0;
+  width: 100%;
 }
 
 .sub-menu a {
-  padding: 5px 10px;
+  padding: 8px 20px;
   display: block;
-  color: #333 !important;
+  color: #fff !important;
+  font-size: 0.9em;
+  text-decoration: none;
+  border: none !important; /* Enlever le soulignement rose si présent */
 }
 
-/* Affiche au survol */
+/* Effet de survol sur les sous-liens */
+.sub-menu a:hover {
+  background-color: #333;
+}
+
+/* L'action magique : Afficher au survol */
 .masthead__menu-item:hover .sub-menu {
   display: block;
 }
