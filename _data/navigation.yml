@@ -4,7 +4,7 @@ main:
     children:
       - title: "Positions"
         url: /project/positions/
-      - title: "Risk Overview"
+      - title: "Operational Risk"
         url: /project/risk/
       - title: "Performance"
         url: /project/performance/
