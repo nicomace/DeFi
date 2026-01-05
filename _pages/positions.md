@@ -83,7 +83,7 @@ This realtime inventory will be later used to adjust hedge.
 
 
 ## Lend & borrow status
-Due to inherent risks to CLMM (covered here: [Risk Overview](/testDeFi/project/risk/)), I chose to leverage my capital borrowing stablecoins on Aave for example. Excepts protocol risk (small as Aave is a well-audited, structured and large protocol), the major risk that can occurs is liquidation. A healthy LTV would prevent major liquidations as we faced early on the 10th of October. 
+Due to inherent risks to CLMM (covered here: [Operational Risk](/testDeFi/project/risk/)), I chose to leverage my capital borrowing stablecoins on Aave for example. Excepts protocol risk (small as Aave is a well-audited, structured and large protocol), the major risk that can occurs is liquidation. A healthy LTV would prevent major liquidations as we faced early on the 10th of October. 
 
 Rather than checking manually borrowing protocols, the following view aims to centralize all borrowing positions.
 
