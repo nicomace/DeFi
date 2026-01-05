@@ -1,5 +1,5 @@
 ---
-title: "DeFi Risk Monitoring Toolkit"
+title: "DeFi Risk & Performance Framework"
 permalink: /project/
 layout: single
 classes: wide
@@ -14,7 +14,7 @@ header:
   overlay_filter: "0.45"
   teaser: /assets/images/toolkit/cover.png
   # overlay_image: /assets/images/toolkit/cover-wide.png
-excerpt: "A practical toolkit to monitor DeFi risk exposure, CLMM positions, and performance over time — built with a market-maker mindset."
+excerpt: "A structured approach to monitoring liquidity, risk exposure and performance across DeFi positions."
 ---
 
 <style>
