@@ -36,6 +36,8 @@ We introduce this module as an operational monitoring layer built to manage idle
 -	What is the opportunity cost?
 -	What action should I take NOW?
 
+---
+
 <figure>
   <img src="/testDeFi/assets/images/risk/risk.png" alt="Risk Dashboard">
   <figcaption><em>Risk monitoring</em></figcaption>
@@ -64,5 +66,6 @@ Hedging strategies for inventory drift are identified as a potential future exte
 #### ---- Complementary Risk Monitoring ----
 In addition to LP operational risk, liquidation risk on lending positions is monitored through a dedicated LTV overview and automated alerts.
 Detailled here: [Lend & borrow status]([/testDeFi/project/positions/#lend--borrow-status))
-
+[Position Monitoring](/testDeFi/project/positions/)
+/testDeFi/project/positions/#lend--borrow-status
 
