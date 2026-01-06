@@ -11,15 +11,15 @@ remote_theme: just-the-docs/just-the-docs
 
 # Fix pour le Menu : Forcer Jekyll à inclure tes dossiers de contenu
 # Si tes fichiers sont dans "_pages", on dit à Jekyll de ne pas les ignorer
-#include:
- # - _pages
- # - project 
+include:
+  - _pages
+  - project 
 
 # Configuration de la navigation
 nav_enabled: true
-nav_external_links:
-  - title: "GitHub Repo"
-    url: https://github.com/nicomace/testDeFi
+#nav_external_links:
+  #- title: "GitHub Repo"
+  #  url: https://github.com/nicomace/testDeFi
 
 # Recherche
 search_enabled: false
@@ -43,12 +43,13 @@ plugins:
   - jekyll-include-cache
 
 # Pied de page
-footer_content: "Copyright &copy; 2026 Nicolas Macé. Built with Just the Docs."
+footer_content: "Copyright &copy; 2026 Nicolas Macé."
 
 # Liens rapides en haut de la sidebar
 aux_links:
   "Linkedin": "https://www.linkedin.com/in/macenicolas/"
-  "GitHub": "https://github.com/nicomace"
+  "GitHub": "https://github.com/nicomace/testDeFi"
+  "X": "https://x.com/niclos96"
 
 # Paramètres par défaut
 defaults:
