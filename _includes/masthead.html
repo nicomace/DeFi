@@ -43,47 +43,6 @@
     display: block !important;
     border-bottom: none !important;
   }
-
-/* --- STYLE FINAL : CADRE BEIGE & TEXTE LISIBLE --- */
-
-  /* 1. Le cadre extérieur global : Bordure beige uniquement */
-  .toc__menu, 
-  .sidebar .nav__list {
-      border: 1px solid #f5f5dc !important;
-      background-color: #000 !important; /* On garde le fond bien noir */
-      border-radius: 4px !important;
-      padding: 0 !important;
-      overflow: hidden !important;
-  }
-  
-  /* 2. Le bandeau de titre "On this page" : Fond beige, Texte noir */
-  .toc__menu .nav__title,
-  .sidebar .nav__list .nav__title {
-      background-color: #f5f5dc !important; /* Force le BEIGE ici */
-      color: #000 !important;               /* Texte NOIR pour que ce soit lisible */
-      border: none !important;
-      margin: 0 !important;
-  }
-  
-  /* 3. Les liens dans la liste : Texte blanc, pas de rose */
-  .toc__menu li a, 
-  .sidebar .nav__list li a {
-      color: #fff !important; 
-      border-bottom: 1px solid #222 !important; /* Ligne de séparation sombre */
-      background: transparent !important;
-  }
-  
-  /* 4. Supprimer la barre rose à gauche qui apparaît parfois */
-  .toc__menu li a.is-active,
-  .sidebar .nav__list li a.is-active {
-      border-left: 3px solid #f5f5dc !important; /* Barre beige à la place du rose */
-      color: #f5f5dc !important;
-  }
-  
-  /* 5. L'icône (la petite liste) : On la force en noir pour aller avec le texte du titre */
-  .toc__menu .nav__title i {
-      color: #000 !important;
-  }
 </style>
 
 
