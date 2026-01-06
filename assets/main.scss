@@ -2,36 +2,30 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-/* 1. RÉGLAGES DES COULEURS GLOBALES */
-$background-color: #000000;    /* Fond du site totalement noir */
-$text-color: #ffffff;          /* Texte blanc */
-$primary-color: #f5f5dc;       /* Ta couleur beige pour les accents */
-$border-color: #222222;        /* Bordures très discrètes */
+// 1. RÉGLAGES DES COULEURS POUR JUST THE DOCS
+// On définit les variables avant l'import du thème
+$body-background-color: #000000;
+$sidebar-color: #000000;
+$body-text-color: #ffffff;
+$link-color: #f5f5dc; // Ton beige pour les liens
+$border-color: #222222;
 
-/* Couleurs spécifiques aux skins */
-$ui-sidebar-color: #000000;
-$masthead-link-color: #ffffff;
+// Importation du thème Just the Docs
+@import "just-the-docs";
 
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
-@import "minimal-mistakes";
-
-/* 2. AJUSTEMENTS POUR LE NOIR PROFOND */
-body {
-  background-color: $background-color !important;
+// 2. AJUSTEMENTS POUR LE NOIR PROFOND (Force)
+body, .site-header, .side-bar, .site-footer {
+  background-color: #000000 !important;
 }
 
-.page {
-  background-color: $background-color !important;
+// Ajustement de la bordure du menu latéral
+.side-bar {
+  border-right: 1px solid $border-color !important;
 }
 
-.sidebar, .masthead, .page__footer {
-  background-color: $background-color !important;
-  border-bottom: 1px solid $border-color !important;
-}
-
+// 3. TES STYLES PERSONNALISÉS (CONSERVÉS)
 
 /* ===== About / CV page ===== */
-
 .about-page .cv-actions {
   margin: 1.5rem 0;
   display: flex;
@@ -41,15 +35,13 @@ body {
 
 .about-page .cv-container {
   width: 100%;
-  background: #fff;
+  background: #fff; // On garde le fond blanc pour le PDF/CV
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
-
 /* ===== Positions page ===== */
-
 .positions-page .img-medium {
   max-width: 450px;
   margin: 2rem auto;
@@ -61,81 +53,6 @@ body {
   height: auto;
 }
 
-
-
-
-
-/* --- CORRECTION DROPDOWN NAVIGATION --- */
-
-/* 1. On empêche le Flexbox de casser l'alignement */
-.greedy-nav .visible-links {
-  display: flex !important;
-  flex-direction: row !important;
-  overflow: visible !important; /* Crucial pour voir le menu dépasser */
-}
-
-/* 2. Positionnement du parent */
-.masthead__menu-item {
-  position: relative !important;
-  display: block !important;
-}
-
-/* 3. On force le sous-menu à "sortir" du flux (Floating) */
-ul.sub-menu {
-  display: none !important; /* Caché par défaut */
-  position: absolute !important;
-  top: 100% !important;
-  left: 0 !important;
-  width: 220px !important;
-  background-color: #111 !important; /* Fond noir */
-  z-index: 9999 !important;
-  margin: 0 !important;
-  padding: 10px 0 !important;
-  list-style: none !important;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.5) !important;
-}
-
-/* 4. On s'assure que les liens internes ne flottent PAS entre eux */
-ul.sub-menu li {
-  display: block !important;
-  width: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-ul.sub-menu li a {
-  padding: 10px 20px !important;
-  display: block !important;
-  color: #fff !important;
-  font-size: 0.9rem !important;
-  border-bottom: none !important; /* Enlève la ligne rose par défaut */
-}
-
-/* 5. AFFICHAGE AU SURVOL */
-.masthead__menu-item:hover ul.sub-menu {
-  display: block !important;
-}
-
-/* Effet au survol des liens du menu */
-ul.sub-menu li a:hover {
-  background-color: #333 !important;
-  color: #f5f5dc !important; /* Rose clair au survol */
-}
-
-
-
-/* --- FORCE LE NOIR SUR TOUTES LES COUCHES INTERNES --- */
-
-#main, 
-.initial-content, 
-.page__content,
-.archive,
-article.page {
-  background-color: #000000 !important;
-}
-
-/* Supprime les bordures blanches/grises qui peuvent entourer le contenu */
-.page__inner-wrap {
-  background-color: #000000 !important;
-  box-shadow: none !important;
-}
+// Note: Le code de la "CORRECTION DROPDOWN NAVIGATION" a été supprimé 
+// car Just the Docs gère nativement les menus déroulants (has_children) 
+// de manière beaucoup plus propre dans la barre latérale.
