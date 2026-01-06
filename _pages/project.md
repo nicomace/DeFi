@@ -115,7 +115,6 @@ Goal: Measure realized performance vs "APR" and economic efficiency.
 
 
 ## Architecture (simple, reliable, extendable)
-
 - **Storage**: Google Sheets (fast iteration) + optional exports
 - **Logic**: formulas + scripts (Apps Script)
 - **Outputs**: dashboards, alerts, and weekly reports
@@ -124,10 +123,7 @@ Goal: Measure realized performance vs "APR" and economic efficiency.
   <strong>Design rule:</strong> Every metric must lead to a decision: <em>hold / rebalance / deleverage / exit / add</em>.
 </div>
 
----
-
 ## Roadmap
-
 - [ ] V1: risk overview (LTV + CLMM range monitoring + exposure table)
 - [ ] V2: performance attribution (fees/IL/carry) with weekly snapshots
 - [ ] V3: alerting system (threshold + anomaly detection)
