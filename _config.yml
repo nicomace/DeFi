@@ -56,3 +56,11 @@ defaults:
       path: ""
     values:
       layout: default
+
+
+# Just the Docs settings
+just_the_docs:
+  # Permet d'injecter des composants personnalisés
+  collections:
+    setup:
+      nav_exclude: true
