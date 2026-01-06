@@ -76,6 +76,7 @@ This module focuses on operational monitoring of active positions.
 - Inventory composition (token0, token1) and evolution
 
 Goal: get a clear view on a global and per-position porfolio status. 
+
 **Go deeper →** [Position Monitoring](/testDeFi/project/positions/)
 
 ### 2. Risk Overview
@@ -85,6 +86,7 @@ This module agregates risk indicators for CLMM positions.
 - Lending/borrowing health: LTV monitoring, liquidation distance, collateral concentration
 
 Goal: assess risk of inactive position and take actions to reduce time efficiency.
+
 **Go deeper →** [Risk Overview](/testDeFi/project/risk/)
 
 ### 3. Performance Overview
@@ -93,6 +95,7 @@ This module analyses realized performance per position.
 - Fee management: harvest cadence per pool
 
 Goal: Measure realized performance vs "APR" and economic efficiency. 
+
 **Go deeper →** [Performance Overview](/testDeFi/project/performance/)
 
 
