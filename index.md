@@ -47,7 +47,7 @@ In this context, I developed a framework to measure CLMM strategies efficiency.
 ## Explore the Project
 {: .no_toc .text-delta }
 
-Pour naviguer dans le framework, utilisez le menu latéral ou les liens ci-dessous :
+You can explore the project here :
 
 1.  **[DeFi Risk & Performance Framework]({{ site.baseurl }}/project/)** (Overview)
 2.  **[About Me]({{ site.baseurl }}/about/)** (Background & CV)
