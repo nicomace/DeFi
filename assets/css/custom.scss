@@ -32,3 +32,17 @@ $content-width: 1150px;
   flex-direction: column;
   align-items: flex-start;
 }
+
+---
+---
+// ... tes réglages de largeur précédents ...
+
+.site-author {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; // Aligné à gauche comme tes liens
+  padding-left: 0;
+}
+
+// Optionnel : masquer le titre texte si tu veux que ta photo soit l'élément principal
+// .site-title { display: none; }
