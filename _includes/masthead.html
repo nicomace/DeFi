@@ -43,6 +43,38 @@
     display: block !important;
     border-bottom: none !important;
   }
+
+  /* --- FORCE LE NOIR ABSOLU SUR TOUTE LA STRUCTURE --- */
+
+  /* On cible le conteneur principal par son ID et toutes ses sous-couches */
+  html, 
+  body, 
+  #main, 
+  .page, 
+  .initial-content, 
+  .page__inner-wrap,
+  #main-content {
+      background-color: #000000 !important;
+  }
+  
+  /* On s'assure qu'aucun dégradé ou image de fond du skin ne reste */
+  .masthead, 
+  .page__footer, 
+  .sidebar {
+      background-color: #000000 !important;
+      background-image: none !important;
+      border-color: #222 !important; /* Bordure très sombre pour la structure */
+  }
+  
+  /* Force le texte en blanc partout pour la lisibilité sur fond noir */
+  .page__content, 
+  .page__content p, 
+  .page__content li, 
+  .page__content h1, 
+  .page__content h2, 
+  .page__content h3 {
+      color: #ffffff !important;
+  }
 </style>
 
 
