@@ -66,6 +66,10 @@ This toolkit is designed to answer, at a glance:
   <strong>TradFi bridge:</strong> Think of it as a lightweight “risk desk” for DeFi, built for CLMM LPs, lending/borrowing strategies, and on-chain market making.
 </div>
 
+<figure>
+  <img src="/testDeFi/assets/images/framework-flow.png" alt="Project dashboard">
+  <figcaption><em>Framework flow</em></figcaption>
+</figure>
 
 ## What it covers
 
@@ -98,26 +102,6 @@ Measures real LP performance beyond headline APR.
 *Focuses on economic efficiency, not advertised yields.*
 
 **Go deeper →** [Performance Overview](/testDeFi/project/performance/)
-
----
-
-<div class="framework-flow">
-  <div class="flow-box">
-    <strong>Position Monitoring</strong><br>
-    <span>Live position state</span>
-  </div>
-  <div class="flow-arrow">↓</div>
-  <div class="flow-box">
-    <strong>Risk Overview</strong><br>
-    <span>Exposure & health</span>
-  </div>
-  <div class="flow-arrow">↓</div>
-  <div class="flow-box">
-    <strong>Performance Overview</strong><br>
-    <span>Economic outcome</span>
-  </div>
-</div>
-
 
 ## Key metrics (the “risk desk” layer)
 
