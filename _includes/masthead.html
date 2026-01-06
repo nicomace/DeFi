@@ -44,45 +44,49 @@
     border-bottom: none !important;
   }
 
+/* --- STYLE FINAL DU TOC : BORDURES UNIQUEMENT --- */
 
-/* --- CIBLAGE RADICAL DU TOC --- */
-
-/* --- NETTOYAGE COMPLET DU ROSE DANS LA SIDEBAR --- */
-
-/* On cible tout ce qui est dans la zone TOC et on force le beige */
-  [class*="toc"] .nav__title, 
-  [class*="toc"] {
-      background-color: #f5f5dc !important;
-      color: #111 !important;
-      border-color: #f5f5dc !important;
-  }
-  
-  /* On s'occupe de la liste en dessous du titre */
-  .sidebar .nav__list, 
-  .toc__menu .nav__items {
+/* 1. Le titre "On this page" : Fond beige, texte noir */
+  .toc__menu .nav__title, 
+  .sidebar .nav__list .nav__title {
+      background-color: #f5f5dc !important; /* Fond beige */
+      color: #000 !important;               /* Texte noir pour contraste */
       border: 1px solid #f5f5dc !important;
-      background-color: transparent !important;
+      margin: 0 !important;
+      border-radius: 4px 4px 0 0 !important; /* Arrondis en haut seulement */
   }
   
-  /* On neutralise tous les liens pour qu'ils ne soient plus roses */
-  .toc__menu a, 
-  .sidebar .nav__list a {
-      color: #fff !important; /* Texte blanc pour les liens */
-      border: none !important;
+  /* 2. Le cadre de la liste : Bordure beige, FOND NOIR */
+  .toc__menu, 
+  .sidebar .nav__list {
+      border: 1px solid #f5f5dc !important;
+      background-color: #000 !important;    /* Force le fond noir */
+      border-radius: 4px !important;
+      padding: 0 !important;
   }
   
-  /* Couleur du lien quand on passe dessus ou qu'on est sur la section */
-  .toc__menu a:hover, 
-  .toc__menu .is-active {
-      color: #f5f5dc !important;
-      text-decoration: underline !important;
+  /* 3. Les liens de la liste : Texte blanc, pas de fond beige */
+  .toc__menu li a, 
+  .sidebar .nav__list li a {
+      color: #fff !important;               /* Texte blanc */
+      background-color: transparent !important; 
+      border-bottom: 1px solid #222 !important; /* Ligne de séparation fine */
+      padding: 10px 15px !important;
+      display: block;
   }
   
-  /* On force l'icône à changer de couleur aussi */
-  .toc__menu .nav__title i, 
-  .toc__menu .nav__title svg {
-      color: #111 !important;
+  /* 4. Effet au survol et lien actif */
+  .toc__menu li a:hover, 
+  .toc__menu li a.is-active {
+      color: #f5f5dc !important;            /* Le texte devient beige au survol */
+      background-color: #111 !important;    /* Fond légèrement gris au survol */
   }
+  
+  /* On enlève la bordure du dernier élément */
+  .toc__menu li:last-child a {
+      border-bottom: none !important;
+  }
+
 </style>
 
 
