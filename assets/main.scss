@@ -103,18 +103,31 @@ ul.sub-menu li a:hover {
 }
 
 
+/* --- FORCER LE STYLE DU TOC --- */
 
-/* Changer la couleur du cadre (bordure extérieure) */
+/* 1. La bordure extérieure (le cadre) */
+.sidebar .nav__list, 
 .toc__menu {
-  border: 1px solid #f5f5dc !important; /* Remplacez par votre couleur */
-  border-radius: 4px; /* Optionnel : arrondit légèrement les coins */
+  border: 1px solid #f5f5dc !important;
+  border-radius: 4px !important;
+  background-color: transparent !important;
+  overflow: hidden !important; /* Pour que le bandeau ne dépasse pas des coins arrondis */
 }
 
-/* Changer la couleur des lignes de séparation entre les éléments */
+/* 2. Le bandeau de titre (On this page) */
+.toc__menu .nav__title {
+  background-color: #f5f5dc !important; /* La couleur de fond du titre */
+  color: #111 !important;             /* Couleur du texte du titre (noir pour contraste) */
+  margin: 0 !important;               /* Aligne parfaitement avec le cadre */
+}
+
+/* 3. Les séparations entre les éléments de liste */
 .toc__menu li {
-  border-bottom: 1px solid #333 !important; /* Ligne discrète entre les titres */
+  border-bottom: 1px solid #333 !important;
 }
 
-.toc__menu li:last-child {
-  border-bottom: none !important; /* Enlève la ligne pour le dernier élément */
+/* 4. La petite barre à gauche du lien actif (optionnel) */
+.toc__menu .nav__items .is-active {
+  border-left-color: #f5f5dc !important;
+  color: #f5f5dc !important;
 }
