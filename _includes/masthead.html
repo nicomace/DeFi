@@ -47,37 +47,41 @@
 
 /* --- CIBLAGE RADICAL DU TOC --- */
 
-/* 1. Force la couleur du bandeau de titre et sa bordure */
-  .sidebar .nav__title,
-  .toc__menu .nav__title,
-  #site-toc .nav__title {
-    background-color: #f5f5dc !important;
-    color: #111 !important;
-    border: 1px solid #f5f5dc !important;
+/* --- NETTOYAGE COMPLET DU ROSE DANS LA SIDEBAR --- */
+
+/* On cible tout ce qui est dans la zone TOC et on force le beige */
+  [class*="toc"] .nav__title, 
+  [class*="toc"] {
+      background-color: #f5f5dc !important;
+      color: #111 !important;
+      border-color: #f5f5dc !important;
   }
   
-  /* 2. Force le cadre de la liste et supprime le rose */
-  .sidebar .nav__list,
-  .toc__menu .nav__items,
-  .toc__menu {
-    border: 1px solid #f5f5dc !important;
-    background-color: transparent !important;
+  /* On s'occupe de la liste en dessous du titre */
+  .sidebar .nav__list, 
+  .toc__menu .nav__items {
+      border: 1px solid #f5f5dc !important;
+      background-color: transparent !important;
   }
   
-  /* 3. Supprime les bordures roses sur chaque lien de la liste */
-  .toc__menu li, 
-  .toc__menu a,
-  .sidebar .nav__list li,
+  /* On neutralise tous les liens pour qu'ils ne soient plus roses */
+  .toc__menu a, 
   .sidebar .nav__list a {
-    border-bottom-color: #333 !important; /* Ligne de séparation discrète */
-    border-left-color: transparent !important; /* Supprime la barre rose à gauche */
+      color: #fff !important; /* Texte blanc pour les liens */
+      border: none !important;
   }
   
-  /* 4. Style pour le lien actif (quand on défile) */
-  .toc__menu .is-active,
-  .sidebar .nav__list .is-active {
-    color: #f5f5dc !important;
-    border-left: 2px solid #f5f5dc !important; /* Barre beige à gauche au lieu de rose */
+  /* Couleur du lien quand on passe dessus ou qu'on est sur la section */
+  .toc__menu a:hover, 
+  .toc__menu .is-active {
+      color: #f5f5dc !important;
+      text-decoration: underline !important;
+  }
+  
+  /* On force l'icône à changer de couleur aussi */
+  .toc__menu .nav__title i, 
+  .toc__menu .nav__title svg {
+      color: #111 !important;
   }
 </style>
 
