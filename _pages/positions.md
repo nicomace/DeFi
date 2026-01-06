@@ -59,7 +59,7 @@ This module also provides the Uniswap V3 computation method for liquidity alloca
 *Algo will be later implemented in code*
 
 ![Liquidity allocation + compute inventory]({{ site.baseurl }}/assets/images/positions/histo_positions1.png)
-{: .mx-auto style="max-width: 450px;" }
+{: .mx-auto }
 *Liquidity allocation + compute inventory*
 {: .text-center .text-small }
 
