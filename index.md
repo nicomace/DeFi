@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Overview"
+#title: "Overview"
 classes: wide
 author_profile: true
 ---
@@ -17,7 +17,7 @@ Key cost indicators:
 -	Time (out-of-range)
 -	Capital inefficiency (impermanent loss, inventory drift)
 
-## What we currently find**
+## What we currently find
 In CLMM (Concentrated Liquidity Market Making), existing interfaces are insufficient:
 -	They show pool and position details (TVL, estimated APR, range, inventory). 
 -	But they are fragmented and limited in quantifying risk in real time.
