@@ -18,7 +18,7 @@ Alongside my professional experience, I have been actively involved in **DeFi an
 ---
 
 ## Background
-{: .no_toc .text-delta }
+#{: .no_toc .text-delta }
 
 ### TradFi
 - **Trading Support & Risk**: Experience in real time trading support supporting trading, risk activities.
