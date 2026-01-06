@@ -9,6 +9,25 @@ nav_order: 10  # Un nombre élevé pour le placer à la fin du menu
 
 <br>
 
+<div style="display: flex; align-items: flex-start; gap: 30px; margin-bottom: 40px; flex-wrap: wrap;">
+  <img src="{{ site.baseurl }}/assets/images/IMG-20250527-WA0005-2.jpg" 
+       alt="Nicolas Macé" 
+       style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid #7253ed; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
+  
+  <div style="flex: 1; min-width: 300px;">
+    <h2 style="margin-top: 0;">Nicolas Macé</h2>
+    <p style="font-size: 1.1em; color: #959396;">
+      <strong>Financial Engineering & DeFi Risk Analyst</strong>
+    </p>
+    <p>
+      Passionné par l'application des principes de gestion des risques institutionnels aux protocoles DeFi, je me spécialise dans le monitoring des positions et l'optimisation des stratégies de market making (CLMM).
+    </p>
+  </div>
+</div>
+
+---
+<br>
+
 My name is **Nicolas Macé**.
 
 I graduated from an engineering school with a specialization in **financial engineering**, and I worked for several years in **investment banking** in trading support and risk-related roles.
