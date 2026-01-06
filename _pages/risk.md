@@ -30,16 +30,16 @@ We introduce this module as an operational monitoring layer built to manage idle
 
 -> This risk view is intentionally simple and action-oriented.
 
-<figure>
-  <img src="/testDeFi/assets/images/risk/risk.png" alt="Risk Dashboard">
-  <figcaption><em>Risk monitoring</em></figcaption>
-</figure>
-
 ## Purpose
 -	What is the status of the portfolio?
 -	Do I have inactive positions?
 -	What is the opportunity cost?
 -	What action should I take NOW?
+
+<figure>
+  <img src="/testDeFi/assets/images/risk/risk.png" alt="Risk Dashboard">
+  <figcaption><em>Risk monitoring</em></figcaption>
+</figure>
 
 ## Scope of the module
 As each position works differently (asset, range, volatility), this module aims to create an easy call-to-action (or not).
