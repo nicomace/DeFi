@@ -52,7 +52,6 @@ The objective is simple:
 
 👉 turn fragmented DeFi positions into a coherent, risk-aware portfolio view.
 
-
 ## Why this toolkit exists
 
 Most DeFi dashboards show *positions*. Few show **risk**.
