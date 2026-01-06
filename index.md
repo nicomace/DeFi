@@ -30,10 +30,8 @@ In CLMM (Concentrated Liquidity Market Making), existing interfaces are insuffic
 
 In this context, I developed a framework to measure CLMM strategies efficiency. 
 
-{: .important }
-> Ce framework apporte une approche disciplinée et orientée risque, inspirée des pratiques institutionnelles.
-
 ## Framework structure
+This project was created to bring a more disciplined, risk-oriented approach to DeFi strategies, inspired by institutional practices:
 - **Monitoring lending and borrowing positions** (LTV, liquidation buffers).
 - **Tracking CLMM LP positions**:
   - in-range / out-of-range status
