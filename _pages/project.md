@@ -70,6 +70,8 @@ This toolkit is designed to answer, at a glance:
   <figcaption><em>Framework flow</em></figcaption>
 </figure>
 
+![Framework flow](/testDeFi/assets/images/framework-flow.png){: .align-center width="520" }
+
 ## What it covers
 
 ### 1. Position Monitoring (CLMM / LP)
