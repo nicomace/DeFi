@@ -70,31 +70,32 @@ This toolkit is designed to answer, at a glance:
 ## What it covers
 
 ### 1. Position Monitoring (CLMM / LP)
-This module focuses on operational monitoring of active positions.
-- Live state: in-range/out-of-range
-- Postion value with/without fees, expected APR
-- Inventory composition (token0, token1) and evolution
+Track the live state of active DeFi positions.
+- In-range/out-of-range status
+- Inventory composition (token0 / token1) and position value
+- Lending/borrowing health: LTV monitoring, liquidation distance
 
-Goal: get a clear view on a global and per-position porfolio status. 
+*Designed to support day-to-day LP and CLMM position management.*
 
 **Go deeper →** [Position Monitoring](/testDeFi/project/positions/)
 
 ### 2. Risk Overview
-This module agregates risk indicators for CLMM positions.
-- Opportunity cost of inactive positions
-- Call-to-action indicator for inactive position
-- Lending/borrowing health: LTV monitoring, liquidation distance, collateral concentration
+Agregates risk indicators for inactive positions.
+- Opportunity cost
+- Call-to-action indicator
+- Lending/borrowing health preview
 
-Goal: assess risk of inactive position and take actions to reduce time efficiency.
+*Measures how inactive position improves risk.*
 
 **Go deeper →** [Risk Overview](/testDeFi/project/risk/)
 
 ### 3. Performance Overview
-This module analyses realized performance per position.
-- Net performance over time: **fees, inventory change**
-- Fee management: harvest cadence per pool
+Measures real LP performance beyond headline APR.
+- Net performance over time (position value + fees).
+- Fee management with harvest cadence per pool
+- Daily and cumulative performance tracking
 
-Goal: Measure realized performance vs "APR" and economic efficiency. 
+*Focuses on economic efficiency, not advertised yields.*
 
 **Go deeper →** [Performance Overview](/testDeFi/project/performance/)
 
