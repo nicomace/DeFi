@@ -20,13 +20,12 @@ nav_order: 10  # Un nombre élevé pour le placer à la fin du menu
       <strong>Financial Engineering & DeFi Risk Analyst</strong>
     </p>
     <p>
-      Passionné par l'application des principes de gestion des risques institutionnels aux protocoles DeFi, je me spécialise dans le monitoring des positions et l'optimisation des stratégies de market making (CLMM).
+      Applying institutional risk management principles to DeFi portfolios and CLMM market making
     </p>
   </div>
 </div>
 
 ---
-<br>
 
 My name is **Nicolas Macé**.
 
