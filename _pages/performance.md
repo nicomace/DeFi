@@ -40,8 +40,8 @@ To summarize:
 
 ## Fee Management Process
 <figure>
-  <img src="/testDeFi/assets/images/performance/performance.png" alt="Perf Dashboard">
-  <figcaption><em>Performance per ended pool</em></figcaption>
+  <img src="/testDeFi/assets/images/performance/harvest_fees.png" alt="Perf Dashboard">
+  <figcaption><em>Harvested Fees screen</em></figcaption>
 </figure>
 
 This layer aims to track all harvested fees. It records fees from active/inactive pools by weeks -> realized fees.
@@ -55,10 +55,9 @@ All the fees-related data in the Dashboard comes from this layer.
 
 
 ## Performance Measurement Framework
-
 <figure>
-  <img src="/testDeFi/assets/images/performance/harvest_fees.png" alt="Perf Dashboard">
-  <figcaption><em>Harvested Fees screen</em></figcaption>
+  <img src="/testDeFi/assets/images/performance/performance.png" alt="Perf Dashboard">
+  <figcaption><em>Performance per ended pool</em></figcaption>
 </figure>
 
 To compute the overall realized return, positions must be closed.
