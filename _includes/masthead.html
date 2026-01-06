@@ -45,32 +45,39 @@
   }
 
 
-  /* --- STYLE FORCE POUR LE TOC (SIDEBAR) --- */
+/* --- CIBLAGE RADICAL DU TOC --- */
 
-/* Force le bandeau de titre "On this page" */
-  .toc__menu .nav__title, 
-  .nav__list .nav__title {
-    background-color: #f5f5dc !important; /* Beige */
-    color: #111 !important;               /* Texte noir */
+/* 1. Force la couleur du bandeau de titre et sa bordure */
+  .sidebar .nav__title,
+  .toc__menu .nav__title,
+  #site-toc .nav__title {
+    background-color: #f5f5dc !important;
+    color: #111 !important;
+    border: 1px solid #f5f5dc !important;
   }
   
-  /* Force le cadre extérieur */
-  .sidebar .nav__list, 
+  /* 2. Force le cadre de la liste et supprime le rose */
+  .sidebar .nav__list,
+  .toc__menu .nav__items,
   .toc__menu {
     border: 1px solid #f5f5dc !important;
-    border-radius: 4px !important;
+    background-color: transparent !important;
   }
   
-  /* Change la couleur des puces/liens au survol dans le TOC */
-  .toc__menu li a:hover,
-  .toc__menu li a.is-active {
+  /* 3. Supprime les bordures roses sur chaque lien de la liste */
+  .toc__menu li, 
+  .toc__menu a,
+  .sidebar .nav__list li,
+  .sidebar .nav__list a {
+    border-bottom-color: #333 !important; /* Ligne de séparation discrète */
+    border-left-color: transparent !important; /* Supprime la barre rose à gauche */
+  }
+  
+  /* 4. Style pour le lien actif (quand on défile) */
+  .toc__menu .is-active,
+  .sidebar .nav__list .is-active {
     color: #f5f5dc !important;
-    border-left-color: #f5f5dc !important;
-  }
-  
-  /* Supprimer toute bordure rose résiduelle sur les liens */
-  .toc__menu a {
-    border-bottom: none !important;
+    border-left: 2px solid #f5f5dc !important; /* Barre beige à gauche au lieu de rose */
   }
 </style>
 
