@@ -1,11 +1,10 @@
 ---
 layout: single
-#title: "Why this project"
+title: "Why this project"
 classes: wide
 author_profile: true
 ---
 
-## Why this project
 With Uniswap V3 released, the new features such as capital efficiency and customized ranges reshaped how market making strategies are designed. 
 
 But it came with a performance cost if price drifts from the selected range creating idle capital and asymmetric directional exposure.
