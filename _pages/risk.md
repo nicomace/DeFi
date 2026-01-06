@@ -1,69 +1,63 @@
 ---
+layout: default
 title: "Operational Risk"
-permalink: /project/risk/
-layout: single
-classes: wide
-author: false
-author_profile: false
-sidebar: false
+parent: "DeFi Risk & Performance Framework"
+nav_order: 2
 ---
 
-<style>
-  /* Supprime les marges et force la largeur maximale sur le conteneur principal */
-  .layout--single .archive, 
-  .layout--single .page__content, 
-  .layout--single .page__inner-wrap {
-    width: 100% !important;
-    max-width: 100% !important;
-    padding-right: 0 !important;
-  }
+# Operational Risk
+{: .no_toc }
 
-  /* Si vous voulez aussi réduire l'espace blanc en haut */
-  .page {
-    width: 100% !important;
-    padding-right: 0 !important;
-  }
-</style>
+<br>
 
+Ce module constitue une couche de surveillance opérationnelle conçue spécifiquement pour gérer les **positions inactives** (idle positions). 
 
-We introduce this module as an operational monitoring layer built to manage idle positions.
+{: .note }
+> Cette vue est intentionnellement simple et orientée vers l'action immédiate.
 
--> This risk view is intentionally simple and action-oriented.
+---
 
 ## Purpose
--	What is the status of the portfolio?
--	Do I have inactive positions?
--	What is the opportunity cost?
--	What action should I take NOW?
+{: .no_toc .text-delta }
+
+- Quel est le statut global du portefeuille ?
+- Ai-je des positions inactives ?
+- Quel est le **coût d'opportunité** ?
+- Quelle action dois-je entreprendre **MAINTENANT** ?
 
 ---
 
-<figure>
-  <img src="/testDeFi/assets/images/risk/risk.png" alt="Risk Dashboard">
-  <figcaption><em>Risk monitoring</em></figcaption>
-</figure>
+![Risk Monitoring Dashboard]({{ site.baseurl }}/assets/images/risk/risk.png)
+{: .mx-auto }
+*Operational Risk Monitoring Dashboard*
+{: .text-center .text-small }
+
+---
 
 ## Scope of the module
-As each position works differently (asset, range, volatility), this module aims to create an easy call-to-action (or not).
+Chaque position fonctionnant différemment (actifs, range, volatilité), ce module vise à créer un **appel à l'action** (Call-to-Action) simple.
 
-Thinking as an opportunity cost on out-of-range (OOR) position, restores control on what action perform to reduce non profitable but risky positions.
+En pensant en termes de coût d'opportunité pour les positions hors-range (Out-of-Range - OOR), on redonne le contrôle sur les décisions nécessaires pour réduire les positions non rentables mais risquées.
 
-## Risk Logic
-When talking about fast decision-making, the rules need to be forward: time-based OOR.
+### Risk Logic: The "OOR Timer"
+Pour une prise de décision rapide, les règles doivent être claires et basées sur le temps passé hors-range :
 
--> How much earnings am I losing while OOR?
+| Temps OOR | Statut | Action suggérée |
+| :--- | :--- | :--- |
+| **< 2 Jours** | Acceptable | Aucune (bruit de marché ou pic de volatilité). |
+| **3 à 5 Jours** | À surveiller | Le coût d'opportunité augmente. Changement de structure ? |
+| **5 Jours +** | Critique | Envisager d'adapter la stratégie : **rebalance** ou **exit**. |
 
--	2D: Acceptable as market conditions could interfere (ex: volatility spike).
--	3D to 5D: Opportunity cost that needs to be **monitored**. Perhaps market structure is changing.
--	5D+: Enough to consider adapting strategy: **rebalance** or **exit** depending on the market structure.
+---
 
 ## Limitations
-This module deliberately excludes some risks such as Impermanent Loss (inherent to AMM structure). We especially focus on LP strategies here, so no need to compare with HODL.
+Ce module exclut délibérément certains risques pour rester focalisé sur l'opérationnel :
+- **Impermanent Loss** : Considéré comme inhérent à la structure AMM. Nous comparons ici l'efficacité de la stratégie LP, pas par rapport au HODL.
+- **Drawdowns Directionnels** : L'exposition de l'inventaire est gérée séparément.
+- **Hedging** : Les stratégies de couverture pour le drift d'inventaire sont identifiées comme une extension future du framework.
 
-Directional drawdowns caused by inventory exposure are intentionally outside the current scope.
-Hedging strategies for inventory drift are identified as a potential future extension of this risk framework.
+#### Complementary Risk Monitoring
+En plus du risque opérationnel LP, le risque de liquidation sur les positions de prêt (Lending) est surveillé via une vue LTV dédiée et des alertes automatisées.
 
-#### ---- Complementary Risk Monitoring ----
-In addition to LP operational risk, liquidation risk on lending positions is monitored through a dedicated LTV overview and automated alerts.
-
-Detailled here: [Lend & borrow status](/testDeFi/project/positions/#lend--borrow-status)
+[Détails ici : Lend & borrow status]({{ site.baseurl }}/project/positions/#lend--borrow-status)
+{: .btn .btn-outline }
