@@ -1,77 +1,52 @@
 <style>
   @media (min-width: 67rem) {
-    /* 1. Définition des largeurs */
-    :root {
-      --nav-width: 380px !important;    /* Largeur cible */
-      --nav-width-md: 380px !important;
+    /* 1. ON CASSE LE CADRE : On force le conteneur global à prendre 100% de l'écran */
+    /* Cela supprime les colonnes vides à gauche et à droite */
+    .container, .main-wrapper, .page-wrapper, .site-header {
+        max-width: none !important;
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    /* 2. LA SIDEBAR : On la plaque tout à gauche de la fenêtre */
+    .side-bar {
+        position: fixed !important;
+        left: 0 !important;
+        top: 0 !important;
+        width: 300px !important; /* Tu peux ajuster cette largeur ici */
+        height: 100vh !important;
+        border-right: 1px solid #3d3d3d !important;
+        background-color: #1d1d21 !important;
+        z-index: 1000;
+    }
+
+    /* 3. LE CONTENU : On le décale pour qu'il commence après la barre */
+    .main {
+        margin-left: 300px !important; /* Doit être identique à la largeur side-bar */
+        width: calc(100% - 300px) !important;
+        max-width: none !important;
+    }
+
+    /* 4. ALIGNEMENT INTERNE : On décale le texte DANS la barre */
+    .site-title, .nav-list {
+        padding-left: 50px !important; 
+        text-align: left !important;
     }
     
-    /* 2. On élargit physiquement la barre latérale */
-    .side-bar {
-      width: 380px !important;
-      flex: 0 0 380px !important;
-      border-right: 1px solid #3d3d3d !important; /* Pour que la ligne de séparation bouge aussi */
-      background-color: #1d1d21 !important;        /* Ta couleur de fond sombre */
-    }
-
-    /* 3. On décale le bloc principal exactement de la même valeur */
-    .main {
-      margin-left: 380px !important;
-      max-width: none !important;
-    }
-
-    /* 4. On ajuste le texte à l'intérieur */
-    .main-content-wrap {
-      max-width: 1400px !important;
-      width: 100% !important;
-      padding-left: 60px !important;  /* Espace interne au texte */
-      padding-right: 60px !important;
-    }
-
-    .main-header {
-      max-width: 1400px !important;
-      padding-left: 60px !important;
-    }
-  }
-
-  /* Cache le message Just the Docs */
-  footer.site-footer p.text-small {
-    display: none !important;
-  }
-
- 
-
-
-  @media (min-width: 67rem) {
-    /* 1. On force la sidebar à coller au bord gauche de la fenêtre */
-    .side-bar {
-      left: 0 !important;
-      width: 280px !important; /* Ajustez cette valeur selon la largeur voulue */
-      min-width: 280px !important;
-      position: fixed !important; /* Garantit que le bloc reste ancré à gauche */
-      height: 100% !important;
-    }
-
-    /* 2. On s'assure que le contenu principal commence exactement après la barre */
-    .main {
-      margin-left: 280px !important;
-      width: calc(100% - 280px) !important;
-    }
-
-    /* 3. Vos réglages d'alignement interne pour le titre et le menu */
-    .site-title, .nav-list {
-      padding-left: 50px !important; /* Espace interne pour que le texte ne colle pas au bord de l'écran */
-      text-align: left !important;
-    }
-
     .site-title {
-      margin-top: 40px !important;
-      margin-bottom: 30px !important;
+        margin-top: 50px !important;
+        margin-bottom: 40px !important;
+        display: flex !important;
+    }
+
+    /* 5. LARGEUR DU TEXTE : Ton contenu principal */
+    .main-content-wrap {
+        max-width: 1200px !important;
+        margin: 0 !important;
+        padding: 40px 80px !important;
     }
   }
 
-  /* Cache le message Just the Docs */
-  footer.site-footer p.text-small {
-    display: none !important;
-  }
+  /* Supprime la mention Just the Docs */
+  footer.site-footer p.text-small { display: none !important; }
 </style>
