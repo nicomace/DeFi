@@ -42,13 +42,10 @@ This project was created to bring a more disciplined, risk-oriented approach to 
 
 ---
 
-## Explore the Project
-{: .no_toc .text-delta }
+### Explore the Project
 
-You can explore the project here :
-
-1.  **[DeFi Risk & Performance Framework]({{ site.baseurl }}/project/)** (Overview)
-2.  **[About Me]({{ site.baseurl }}/about/)** (Background & CV)
+1.  **[DeFi Risk & Performance Framework]({{ site.baseurl }}/_pages/project/)** (Overview)
+2.  **[About Me]({{ site.baseurl }}/_pages/about/)** (Background & CV)
 
 <br>
 Feel free to reach out if you’re interested in **DeFi risk, market making, or portfolio analytics**.
