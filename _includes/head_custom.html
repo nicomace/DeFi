@@ -1,6 +1,6 @@
 <style>
   @media (min-width: 67rem) {
-    /* 1. ÉLIMINER LES COLONNES VIDES (Full Width) */
+    /* 1. ON FORCE LE PLEIN ÉCRAN */
     .container, .main-wrapper, .page-wrapper {
         max-width: none !important;
         width: 100% !important;
@@ -8,7 +8,7 @@
         display: flex !important;
     }
 
-    /* 2. SIDEBAR : 25% de largeur, fixée à gauche */
+    /* 2. SIDEBAR (25%) */
     .side-bar {
         width: 25% !important;
         min-width: 280px !important;
@@ -19,49 +19,48 @@
         background-color: #1d1d21 !important;
         border-right: 1px solid #3d3d3d !important;
         z-index: 1000;
-        display: block !important; /* On repasse en block pour mieux contrôler les marges */
     }
 
-    /* 3. TITRE ET SOMMAIRE : On les positionne avec des marges */
+    /* 3. POSITIONNEMENT DU TEXTE DANS LA SIDEBAR */
+    /* On utilise un pourcentage pour que ce soit "au milieu" de la barre */
+    .site-title, .nav-list {
+        padding-left: 20% !important; 
+        text-align: left !important;
+    }
+
     .site-title {
-        margin-top: 100px !important;    /* Pour le descendre du haut */
-        padding-left: 20% !important;   /* Pour le décaler vers le milieu de la barre */
-        padding-right: 10% !important;
-        margin-bottom: 50px !important;
+        margin-top: 80px !important; /* Ajuste cette valeur pour monter/descendre le titre */
+        margin-bottom: 40px !important;
         display: block !important;
     }
 
-    .nav-list {
-        padding-left: 20% !important;   /* Même valeur que le titre pour l'alignement */
-        padding-right: 10% !important;
-        text-align: left !important;    /* On reste aligné à gauche pour la lisibilité */
-    }
-
     .nav-list-item {
-        text-align: left !important;
         margin-bottom: 15px !important;
     }
 
-    /* 4. SUPPRIMER LA BANDE DU HAUT (Header/Recherche) */
-    .main-header {
-        display: none !important;
-    }
-
-    /* 5. CONTENU PRINCIPAL : 75% restant */
+    /* 4. CONTENU PRINCIPAL (75%) ET BARRE DU HAUT */
     .main {
         margin-left: 25% !important;
-        width: 70% !important;          /* 75% - 5% de marge à droite */
+        width: 75% !important;
         max-width: none !important;
-        padding-top: 60px !important;
     }
 
+    /* Réactivation et alignement de la barre du haut */
+    .main-header {
+        display: flex !important;
+        width: 100% !important;
+        padding-left: 60px !important; 
+        padding-right: 5% !important; /* Marge à droite pour la barre */
+    }
+
+    /* Alignement du texte avec la marge de 5% à droite */
     .main-content-wrap {
-        padding-left: 60px !important;  /* Espace après la barre noire */
-        padding-right: 5% !important;   /* La marge de 5% à droite que tu as demandée */
+        padding-left: 60px !important;
+        padding-right: 5% !important; /* Ta marge de 5% au bord droit */
         max-width: none !important;
     }
   }
 
-  /* Cache les crédits en bas */
+  /* Suppression définitive de la mention Just the Docs */
   footer.site-footer p.text-small { display: none !important; }
 </style>
