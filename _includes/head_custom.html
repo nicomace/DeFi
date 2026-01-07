@@ -1,0 +1,25 @@
+<style>
+  @media (min-width: 67rem) {
+    /* Réduction forcée de la sidebar */
+    :root {
+      --nav-width: 200px !important;
+      --nav-width-md: 220px !important;
+    }
+    
+    .side-bar {
+      width: 210px !important;
+      flex: 0 0 210px !important;
+    }
+
+    .main {
+      margin-left: 210px !important;
+    }
+
+    /* Élargissement du contenu */
+    .main-content-wrap, .main-content {
+      max-width: 1300px !important;
+      padding-left: 50px !important;
+      padding-right: 50px !important;
+    }
+  }
+</style>
