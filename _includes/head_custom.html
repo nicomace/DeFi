@@ -41,26 +41,35 @@
 
  
 
-  /* 1. On garde l'alignement à gauche mais on décale tout le bloc */
+  /* 1. Positionnement du TITRE (Portfolio NM) */
+  .site-title {
+    display: flex !important;
+    justify-content: flex-start !important; /* Aligné à gauche */
+    padding-left: 60px !important;         /* Décalage vers la droite */
+    margin-top: 40px !important;           /* Pour le redescendre s'il est trop haut */
+    margin-bottom: 40px !important;        /* Espace avec le menu */
+    height: auto !important;
+  }
+
+  /* 2. Positionnement du MENU (Home, About...) */
   .nav-list {
     text-align: left !important;
-    padding-left: 40px !important; /* Augmente ce chiffre pour décaler vers la droite */
+    padding-left: 60px !important;         /* Doit être identique au titre pour l'alignement */
+    list-style: none !important;
   }
 
-  /* 2. On aligne le titre sur le même retrait */
-  .site-title {
-    justify-content: flex-start !important;
-    padding-left: 40px !important; /* Doit être identique au padding-left de .nav-list */
-    margin-bottom: 30px !important;
-  }
-
-  /* 3. On s'assure que les liens ne sont pas centrés individuellement */
-  .nav-list-item, .nav-list-link {
+  .nav-list-item {
     text-align: left !important;
+    margin-bottom: 10px !important;        /* Espace entre les lignes du menu */
   }
 
-  /* 4. On gère l'espace pour les flèches de sous-menus */
+  .nav-list-link {
+    display: block !important;
+    padding-left: 0 !important;            /* On reset les paddings internes */
+  }
+
+  /* 3. Ajustement de la flèche du menu déroulant */
   .nav-list-expander {
-    right: 20px !important;
+    right: 20px !important;                /* La flèche reste sur le bord droit */
   }
 </style>
