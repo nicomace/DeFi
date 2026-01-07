@@ -42,7 +42,7 @@ This project was created to bring a more disciplined, risk-oriented approach to 
 
 ---
 
-### Explore the Project
+## Explore the Project
 
 1.  **[DeFi Risk & Performance Framework]({{ site.baseurl }}/_pages/project/)** (Overview)
 2.  **[About Me]({{ site.baseurl }}/_pages/about/)** (Background & CV)
