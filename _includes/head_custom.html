@@ -1,6 +1,6 @@
 <style>
   @media (min-width: 67rem) {
-    /* Réduction forcée de la sidebar */
+    /* 1. Sidebar plus fine */
     :root {
       --nav-width: 200px !important;
       --nav-width-md: 220px !important;
@@ -11,15 +11,30 @@
       flex: 0 0 210px !important;
     }
 
+    /* 2. Le contenu principal prend tout l'espace restant */
     .main {
       margin-left: 210px !important;
+      max-width: none !important; /* Retire la limite de largeur du bloc parent */
     }
 
-    /* Élargissement du contenu */
-    .main-content-wrap, .main-content {
-      max-width: 1300px !important;
-      padding-left: 50px !important;
-      padding-right: 50px !important;
+    /* 3. On force le texte à s'élargir (C'est ici que ça se joue) */
+    .main-content-wrap {
+      max-width: 1400px !important; /* Augmente cette valeur pour plus de largeur */
+      width: 95% !important;        /* Prend 95% de l'espace disponible */
+      padding-left: 60px !important;
+      padding-right: 60px !important;
+    }
+
+    /* 4. On élargit aussi la zone de lecture réelle */
+    .main-content {
+      max-width: 100% !important;
+      margin: 0 !important;
+    }
+
+    /* 5. Aligner le header (recherche) sur la même largeur */
+    .main-header {
+      max-width: 1400px !important;
+      width: 95% !important;
     }
   }
 </style>
