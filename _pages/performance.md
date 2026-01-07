@@ -17,6 +17,7 @@ nav_order: 3
 
 ---
 
+
 ## Objective
 
 In [Operational Risk]({{ site.baseurl }}/_pages/risk/), returns are estimated with weekly harvest fees. 
