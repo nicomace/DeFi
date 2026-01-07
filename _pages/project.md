@@ -8,9 +8,10 @@ nav_order: 2
 # DeFi Risk & Performance Framework
 {: .no_toc }
 
+<br>
 {: .warning }
 > **Disclaimer**: This project is for educational and personal analytics purposes. It is **not** financial advice.
-
+<br>
 
 The DeFi Risk Monitoring Toolkit is a personal, research-driven framework designed to monitor, analyze, and manage risk across decentralized finance strategies, with a strong focus on capital efficiency, liquidity provision, and market making mechanics.
 
@@ -30,12 +31,13 @@ This toolkit is designed to answer, at a glance:
 * **What is working?** (fees vs IL, carry vs price move, real net performance)
 * **What should I do next?** (actionable alerts + prioritized checklist)
 
+<br>
 {: .note }
 > **TradFi bridge:** Think of it as a lightweight “risk desk” for DeFi, built for CLMM LPs, lending/borrowing strategies, and on-chain market making.
 
 <br>
 ![Framework flow]({{ site.baseurl }}/assets/images/framework-flow.png)
-{: .mx-auto style="max-width: 520px;" }
+{: .mx-auto style="max-width: 400px;" }
 
 ---
 
