@@ -9,6 +9,7 @@ nav_order: 2
 {: .no_toc }
 
 <br>
+
 {: .warning }
 > **Disclaimer**: This project is for educational and personal analytics purposes. It is **not** financial advice.
 <br>
