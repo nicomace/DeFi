@@ -66,7 +66,7 @@ This module also provides the Uniswap V3 computation method for liquidity alloca
 
 This realtime inventory will be later used to adjust hedge.
 
-*Why inventory matters: in CLMM, inventory naturally shifts with price. if token1 increases, then the pool will automatically adjust by selling token1 for token2. For example, on WETH/USDC, we are locking some profits as WETH is rising.*
+*Why inventory matters: in CLMM, inventory naturally shifts with price. if tokenO increases, then the pool will automatically adjust by selling token0 for token1. For example, on WETH/USDC, we are locking some profits as WETH is rising.*
 
 ---
 
