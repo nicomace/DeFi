@@ -1,31 +1,33 @@
 ---
 ---
-// 1. Définition des variables (AVANT l'import)
-$nav-width: 200px;         // Largeur réduite du sommaire
-$nav-width-md: 220px;      
-$content-width: 1200px;    // Largeur étendue pour ton texte
+/* On n'utilise pas @import pour éviter l'erreur de build sur GitHub */
 
-// 2. Importation du thème (Indispensable pour que les variables fonctionnent)
-@import "just-the-docs";
-
-// 3. Forçage des dimensions pour écrans larges
+/* On force la largeur sur les écrans d'ordinateurs */
 @media (min-width: 67rem) {
+  /* 1. Réduction de la barre latérale (sommaire) */
   .side-bar {
-    width: $nav-width-md !important;
-    min-width: $nav-width-md !important;
+    width: 230px !important;
+    min-width: 230px !important;
   }
 
+  /* 2. Ajustement de la position du contenu principal */
   .main {
-    margin-left: $nav-width-md !important;
+    margin-left: 230px !important;
   }
 
-  // On cible tous les conteneurs pour garantir l'élargissement
+  /* 3. Élargissement de la zone de texte */
   .main-content,
   .main-content-wrap,
   .page-header {
-    max-width: $content-width !important;
+    max-width: 1200px !important;
     width: 100% !important;
     padding-left: 40px !important;
     padding-right: 40px !important;
   }
+}
+
+/* Optionnel : ajuster la taille de police pour les grands écrans */
+.main-content {
+  font-size: 16px;
+  line-height: 1.6;
 }
