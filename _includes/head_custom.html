@@ -1,88 +1,38 @@
 <style>
-  /* 1. AUGMENTATION DE LA TAILLE DE POLICE GLOBALE */
-  html {
-      font-size: 100% !important; /* Augmente tout le texte du site de 15% */
-  }
-
   @media (min-width: 67rem) {
-    /* 2. CONFIGURATION PLEIN ÉCRAN */
-    .container, .main-wrapper, .page-wrapper {
-        max-width: none !important;
-        width: 100% !important;
-        margin: 0 !important;
-        display: flex !important;
+    /* 1. Sidebar légèrement plus large */
+    :root {
+      --nav-width: 250px !important;
+      --nav-width-md: 320px !important;
     }
-
-    /* 3. SIDEBAR (25% de la largeur) */
+    
     .side-bar {
-        width: 25% !important;
-        min-width: 280px !important;
-        position: fixed !important;
-        left: 0 !important;
-        top: 0 !important;
-        height: 100vh !important;
-        background-color: #1d1d21 !important;
-        border-right: 1px solid #3d3d3d !important;
-        z-index: 1000;
-        display: block !important;
+      width: 320px !important;
+      flex: 0 0 320px !important;
     }
 
-    /* 4. ALIGNEMENT TITRE ET SOMMAIRE (Sans double espace) */
-    .site-title {
-        margin-top: 100px !important; /* Descendu pour la lisibilité */
-        padding-left: 20% !important; /* Positionnement visuel central */
-        margin-bottom: 50px !important;
-        font-size: 1.8rem !important; /* Titre plus grand */
-        display: block !important;
-    }
-
-    .nav-list {
-        padding-left: 20% !important; /* Aligné sur le titre */
-        margin: 0 !important;
-        list-style: none !important;
-    }
-
-    .nav-list-item {
-        text-align: left !important;
-        margin-bottom: 15px !important;
-    }
-
-    .nav-list-link {
-        padding-left: 0 !important;
-        margin-left: -16px !important; /* Aspire le texte pour aligner sous le titre */
-        display: inline-block !important;
-        font-size: 1.1rem !important; /* Menu plus grand */
-    }
-
-    /* On cache la flèche qui décale le texte */
-    .nav-list-expander {
-        display: none !important;
-    }
-
-    /* 5. CONTENU PRINCIPAL (75%) ET BARRE DU HAUT */
+    /* 2. On ajuste le décalage du contenu principal pour la nouvelle largeur */
     .main {
-        margin-left: 25% !important;
-        width: 75% !important;
-        max-width: none !important;
+      margin-left: 320px !important;
+      max-width: none !important;
+    }
+
+    /* 3. On garde tes marges de confort pour le texte */
+    .main-content-wrap {
+      max-width: 1400px !important;
+      width: 100% !important;
+      padding-left: 60px !important; 
+      padding-right: 60px !important;
     }
 
     .main-header {
-        display: flex !important;
-        width: 100% !important;
-        padding-left: 60px !important;
-        padding-right: 5% !important; /* Marge de 5% à droite */
-    }
-
-    .main-content-wrap {
-        padding-left: 60px !important;
-        padding-right: 5% !important; /* Marge de 5% à droite */
-        max-width: none !important;
-        width: 100% !important;
+      max-width: 1400px !important;
+      padding-left: 60px !important;
     }
   }
 
-  /* 6. NETTOYAGE FOOTER */
+  /* Bonus : Cache la mention Just the Docs si ce n'est pas encore fait */
   footer.site-footer p.text-small {
-      display: none !important;
+    display: none !important;
   }
 </style>
