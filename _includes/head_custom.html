@@ -1,58 +1,71 @@
 <style>
   @media (min-width: 67rem) {
-    /* 1. ON ELIMINE LE VIDE A GAUCHE : Le site prend toute la largeur */
+    /* 1. ON FORCE LE SITE SUR TOUTE LA LARGEUR */
     .container, .main-wrapper, .page-wrapper {
         max-width: none !important;
         width: 100% !important;
         margin: 0 !important;
+        display: flex !important;
     }
 
-    /* 2. LA SIDEBAR : Bien plaquée à gauche */
+    /* 2. SIDEBAR : 25% de la largeur */
     .side-bar {
+        width: 25% !important;
+        min-width: 250px !important; /* Sécurité pour les petits écrans */
         position: fixed !important;
         left: 0 !important;
-        width: 320px !important; /* On l'élargit un peu pour le confort */
         height: 100vh !important;
         background-color: #1d1d21 !important;
         border-right: 1px solid #3d3d3d !important;
-    }
-
-    /* 3. ALIGNEMENT DU TITRE */
-    .site-title {
+        /* Centrage vertical du contenu dans la barre */
         display: flex !important;
-        padding-left: 60px !important; /* Le retrait que tu as aimé */
-        margin-top: 50px !important;
-        margin-bottom: 30px !important;
+        flex-direction: column !important;
+        justify-content: center !important; 
     }
 
-    /* 4. ALIGNEMENT DU SOMMAIRE (C'est ici que ça se joue) */
-    .nav-list {
-        padding-left: 0 !important; /* On reset le décalage global */
-        margin: 0 !important;
+    /* 3. CENTRAGE DU TITRE ET DU SOMMAIRE DANS LA BARRE */
+    .site-title, .nav-list {
+        text-align: center !important;
+        padding: 0 !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        width: 100% !important;
+    }
+    
+    .site-title {
+        justify-content: center !important;
+        margin-bottom: 40px !important;
+        font-size: 1.5rem !important;
     }
 
     .nav-list-item {
-        padding-left: 60px !important; /* ON ALIGNE ICI (même valeur que le titre) */
-        text-align: left !important;
+        text-align: center !important;
+        padding: 10px 0 !important;
     }
 
-    .nav-list-link {
-        display: inline-block !important;
-        padding-left: 0 !important; /* On enlève le padding interne du lien */
-        margin-left: 0 !important;
-    }
-
-    /* 5. LE CONTENU PRINCIPAL */
+    /* 4. CONTENU PRINCIPAL : Le reste de la largeur */
     .main {
-        margin-left: 320px !important;
-        width: calc(100% - 320px) !important;
+        margin-left: 25% !important; /* Doit correspondre à la largeur sidebar */
+        width: 75% !important;
+        max-width: none !important;
+        background-color: #1d1d21 !important;
     }
 
+    /* 5. MARGE DE 5% À DROITE DU TEXTE */
     .main-content-wrap {
-        padding-left: 80px !important; /* Espace entre la barre et ton texte */
+        max-width: 95% !important; /* Laisse 5% de marge à droite */
+        padding-left: 80px !important; /* Espace confortable après la barre noire */
+        padding-right: 5% !important;  
+        margin: 0 !important;
+    }
+    
+    /* Alignement du header sur le texte */
+    .main-header {
+        padding-left: 80px !important;
+        max-width: 95% !important;
     }
   }
 
-  /* Cache les crédits */
+  /* Cache les crédits Just the Docs */
   footer.site-footer p.text-small { display: none !important; }
 </style>
