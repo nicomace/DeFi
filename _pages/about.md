@@ -17,7 +17,7 @@ nav_order: 10  # Un nombre élevé pour le placer à la fin du menu
   <div style="flex: 1; min-width: 300px;">
     <h2 style="margin-top: 0;">Nicolas Macé</h2>
     <p style="font-size: 1.1em; color: #959396;">
-      <strong>Financial Engineering & DeFi Risk Analyst</strong>
+      <strong>DeFi Risk & Performance Analyst</strong>
     </p>
     <p>
       Applying institutional risk management principles to DeFi portfolios and CLMM market making
@@ -35,15 +35,15 @@ Alongside my professional experience, I have been actively involved in **DeFi an
 
 ## Background
 ### TradFi
-- **Trading Support & Risk**: Experience in real time trading support supporting trading, risk activities.
+- **Trading Support & Risk**: Real-time trading support at the intersection of trading, risk, and operations.
 - **Product expertise**: Exposure to equity, derivatives, fixed income and FX products.
 - **Risk focus**: Strong focus on risk monitoring, incident analysis, and PnL consistency.
-- **Environnement**: Used to work in time-sensitive, high-stakes environments.
-- **Tooling**: Development of production monitoring tool.
+- **Environment**: Used to work in time-sensitive, high-stakes environments.
+- **Tooling**: Built production-grade monitoring tooling (SQL/Python/automation).
 
 ### DeFi
-- **Project analysis** : key metrics (tvl, revenues), tokenomics, chartism, risk/return.
-- **On-chain experience** : Active user of DeFi protocols (lending/borrowing, liquidity provision, yield farming).
+- **Project analysis** : key metrics (tvl, revenues), tokenomics, market structure & technical analysis, risk & return.
+- **On-chain experience** : Active user of DeFi protocols (lending/borrowing, liquidity provision, liquidity & yield strategies).
 - **CLMM strategies** : Hands-on experience with **CLMM LP positions**, treated as market making strategies.
 - **Analytics** : Development of personal dashboards and monitoring tools to track positions and risk over time.
 
