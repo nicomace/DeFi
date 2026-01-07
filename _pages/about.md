@@ -42,11 +42,6 @@ Alongside my professional experience, I have been actively involved in **DeFi an
 - **Tooling**: Development of production monitoring tool.
 
 ### DeFi
-- Project analysis: key metrics (tvl, revenues), tokenomics, chartism, risk/return
-- Active user of DeFi protocols (lending/borrowing, liquidity provision, yield farming)
-- Hands-on experience with **CLMM LP positions**, treated as market making strategies
-- Development of personal dashboards and monitoring tools to track positions over time
-
 - **Project analysis** : key metrics (tvl, revenues), tokenomics, chartism, risk/return.
 - **On-chain experience** : Active user of DeFi protocols (lending/borrowing, liquidity provision, yield farming).
 - **CLMM strategies** : Hands-on experience with **CLMM LP positions**, treated as market making strategies.
