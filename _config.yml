@@ -49,7 +49,7 @@ footer_content: "Copyright &copy; 2026 Nicolas Macé."
 aux_links:
   "Linkedin": "https://www.linkedin.com/in/macenicolas/"
   "X": "https://x.com/niclos96"
-  "GitHub": "https://github.com/nicomace/testDeFi"
+  #"GitHub": "https://github.com/nicomace/testDeFi"
 
 # Paramètres par défaut
 defaults:
