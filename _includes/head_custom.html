@@ -1,70 +1,38 @@
 <style>
   @media (min-width: 67rem) {
-    /* 1. CONFIGURATION PLEIN ÉCRAN */
-    .container, .main-wrapper, .page-wrapper {
-        max-width: none !important;
-        width: 100% !important;
-        margin: 0 !important;
-        display: flex !important;
+    /* 1. Sidebar légèrement plus large */
+    :root {
+      --nav-width: 250px !important;
+      --nav-width-md: 260px !important;
     }
-
-    /* 2. SIDEBAR (25%) */
+    
     .side-bar {
-        width: 25% !important;
-        min-width: 280px !important;
-        position: fixed !important;
-        left: 0 !important;
-        top: 0 !important;
-        height: 100vh !important;
-        background-color: #1d1d21 !important;
-        border-right: 1px solid #3d3d3d !important;
-        z-index: 1000;
+      width: 260px !important;
+      flex: 0 0 260px !important;
     }
 
-    /* 3. ALIGNEMENT DU TITRE */
-    .site-title {
-        margin-top: 80px !important;
-        padding-left: 20% !important; 
-        margin-bottom: 40px !important;
-        display: block !important;
-    }
-
-    /* 4. ALIGNEMENT DU SOMMAIRE (SANS ESPACE) */
-    .nav-list {
-        padding-left: 20% !important; /* Même retrait que le titre */
-        margin: 0 !important;
-    }
-
-    .nav-list-item {
-        text-align: left !important;
-        list-style: none !important;
-    }
-
-    /* C'est ici qu'on enlève l'espace de gauche interne aux liens */
-    .nav-list-link {
-        padding-left: 0 !important;
-        margin-left: -16px !important; /* Aspire le texte vers la gauche */
-        display: inline-block !important;
-    }
-
-    /* On enlève la flèche qui pousse le texte */
-    .nav-list-expander {
-        display: none !important;
-    }
-
-    /* 5. CONTENU PRINCIPAL ET BARRE DU HAUT */
+    /* 2. On ajuste le décalage du contenu principal pour la nouvelle largeur */
     .main {
-        margin-left: 25% !important;
-        width: 75% !important;
+      margin-left: 260px !important;
+      max-width: none !important;
     }
 
-    .main-header, .main-content-wrap {
-        padding-left: 60px !important;
-        padding-right: 5% !important; /* Marge de 5% à droite */
-        max-width: none !important;
+    /* 3. On garde tes marges de confort pour le texte */
+    .main-content-wrap {
+      max-width: 1400px !important;
+      width: 100% !important;
+      padding-left: 100px !important; 
+      padding-right: 60px !important;
+    }
+
+    .main-header {
+      max-width: 1400px !important;
+      padding-left: 100px !important;
     }
   }
 
-  /* Cache les crédits */
-  footer.site-footer p.text-small { display: none !important; }
+  /* Bonus : Cache la mention Just the Docs si ce n'est pas encore fait */
+  footer.site-footer p.text-small {
+    display: none !important;
+  }
 </style>
