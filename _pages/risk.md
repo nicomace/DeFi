@@ -1,34 +1,21 @@
 ---
+layout: default
 title: "Operational Risk"
-permalink: /project/risk/
-layout: single
-classes: wide
-author: false
-author_profile: false
-sidebar: false
+parent: "DeFi Risk & Performance Framework"
+nav_order: 2
 ---
 
-<style>
-  /* Supprime les marges et force la largeur maximale sur le conteneur principal */
-  .layout--single .archive, 
-  .layout--single .page__content, 
-  .layout--single .page__inner-wrap {
-    width: 100% !important;
-    max-width: 100% !important;
-    padding-right: 0 !important;
-  }
+# Operational Risk
+{: .no_toc }
 
-  /* Si vous voulez aussi réduire l'espace blanc en haut */
-  .page {
-    width: 100% !important;
-    padding-right: 0 !important;
-  }
-</style>
-
+<br>
 
 We introduce this module as an operational monitoring layer built to manage idle positions.
 
--> This risk view is intentionally simple and action-oriented.
+{: .note }
+> This risk view is intentionally simple and action-oriented.
+
+---
 
 ## Purpose
 -	What is the status of the portfolio?
@@ -38,32 +25,41 @@ We introduce this module as an operational monitoring layer built to manage idle
 
 ---
 
-<figure>
-  <img src="/testDeFi/assets/images/risk/risk.png" alt="Risk Dashboard">
-  <figcaption><em>Risk monitoring</em></figcaption>
-</figure>
+![Risk Monitoring Dashboard]({{ site.baseurl }}/assets/images/risk/risk.png)
+{: .mx-auto }
+*Operational Risk Monitoring*
+{: .text-center .text-small }
+
+---
 
 ## Scope of the module
 As each position works differently (asset, range, volatility), this module aims to create an easy call-to-action (or not).
 
 Thinking as an opportunity cost on out-of-range (OOR) position, restores control on what action perform to reduce non profitable but risky positions.
 
-## Risk Logic
+### Risk Logic: The "OOR Timer"
 When talking about fast decision-making, the rules need to be forward: time-based OOR.
 
 -> How much earnings am I losing while OOR?
 
--	2D: Acceptable as market conditions could interfere (ex: volatility spike).
--	3D to 5D: Opportunity cost that needs to be **monitored**. Perhaps market structure is changing.
--	5D+: Enough to consider adapting strategy: **rebalance** or **exit** depending on the market structure.
+| OOR duration | Status | Suggested action |
+| :--- | :--- | :--- |
+| **< 2 Days** | Acceptable | None (noise or volatility spike). |
+| **3 to 5 Days** | To monitor | Opportunity cost increases. market structure change? |
+| **5 Days+** | Critical | consider adapting strategy : **rebalance** or **exit**. |
+
+---
 
 ## Limitations
-This module deliberately excludes some risks such as Impermanent Loss (inherent to AMM structure). We especially focus on LP strategies here, so no need to compare with HODL.
+This module deliberately excludes some risks such as:
+- **Impermanent Loss**: Inherent to AMM structure. We especially focus on LP strategies here, so no need to compare with HODL.
+- **Directional drawdowns**: Caused by inventory exposure, it is intentionally outside the current scope.
 
-Directional drawdowns caused by inventory exposure are intentionally outside the current scope.
 Hedging strategies for inventory drift are identified as a potential future extension of this risk framework.
 
-#### ---- Complementary Risk Monitoring ----
+
+## Complementary Risk Monitoring
 In addition to LP operational risk, liquidation risk on lending positions is monitored through a dedicated LTV overview and automated alerts.
 
-Detailled here: [Lend & borrow status](/testDeFi/project/positions/#lend--borrow-status)
+[Detailled here: Lend & borrow status]({{ site.baseurl }}/_pages/positions/#lend--borrow-status)
+{: .btn .btn-outline }

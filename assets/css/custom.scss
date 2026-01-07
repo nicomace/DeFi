@@ -1,0 +1,47 @@
+---
+---
+
+/* 1. On cible les variables CSS à la racine avec la priorité maximale */
+body {
+  --nav-width: 200px !important;
+  --nav-width-md: 220px !important;
+  --content-width: 1300px !important;
+}
+
+@media (min-width: 67rem) {
+  /* 2. On réduit la sidebar en utilisant le nom du tag + la classe pour plus de force */
+  aside.side-bar {
+    width: 210px !important;
+    min-width: 210px !important;
+    flex: 0 0 210px !important;
+  }
+
+  /* 3. On ajuste le décalage du contenu principal */
+  div.main {
+    margin-left: 210px !important;
+    width: calc(100% - 210px) !important;
+  }
+
+  /* 4. On force l'élargissement du texte en ciblant tous les niveaux */
+  .main-content-wrap, 
+  .main-content,
+  #main-content {
+    max-width: 1300px !important;
+    width: 100% !important;
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+  }
+
+  /* 5. On élargit aussi la barre de recherche en haut */
+  .main-header {
+    max-width: 1300px !important;
+  }
+}
+
+/* 6. On répare le bug de la photo de profil si tu as gardé le HTML dans le titre */
+.site-title {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  height: auto !important;
+}

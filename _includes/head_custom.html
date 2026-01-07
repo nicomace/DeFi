@@ -1,0 +1,72 @@
+<style>
+  @media (min-width: 67rem) {
+    /* 1. STRUCTURE GÉNÉRALE */
+    .container, .main-wrapper, .page-wrapper {
+        max-width: none !important;
+        width: 100% !important;
+        margin: 0 !important;
+        display: flex !important;
+    }
+
+    .side-bar {
+        width: 300px !important;
+        position: fixed !important;
+        left: 0 !important;
+        top: 0 !important;
+        height: 100vh !important;
+        background-color: #1d1d21 !important;
+        border-right: 1px solid #3d3d3d !important;
+        z-index: 1000;
+    }
+
+    /* 2. ALIGNEMENT SIDEBAR */
+    .site-title {
+        margin-top: 60px !important;
+        padding-left: 40px !important;
+        margin-bottom: 40px !important;
+        font-size: 1.5rem !important;
+    }
+
+    .nav-list {
+        padding-left: 40px !important;
+    }
+
+    .nav-list-link {
+        padding-left: 0 !important;
+        margin-left: -16px !important;
+        font-size: 1rem !important;
+    }
+
+    .nav-list-expander { display: none !important; }
+
+    /* 3. ÉLARGISSEMENT TOTAL DU TEXTE */
+    .main {
+        margin-left: 300px !important;
+        width: calc(100% - 300px) !important;
+        max-width: none !important; /* Force la zone principale à ne pas être limitée */
+    }
+
+    .main-content-wrap {
+        padding-left: 60px !important;
+        /* RÉGLAGE : Marge ultra-fine à droite */
+        padding-right: 0.5% !important; 
+        
+        /* LA CLÉ : On enlève la limite de largeur par défaut du thème (souvent 800px) */
+        max-width: none !important; 
+        width: 96% !important;
+        
+        font-size: 1.25rem !important;
+        line-height: 1.6 !important;
+    }
+
+    /* On aligne aussi la barre du haut */
+    .main-header {
+        display: flex !important;
+        max-width: none !important;
+        padding-left: 60px !important;
+        padding-right: 2% !important;
+    }
+  }
+
+  footer.site-footer p.text-small { display: none !important; }
+</style>

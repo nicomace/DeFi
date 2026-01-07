@@ -1,50 +1,74 @@
 # Site settings
-title: NicoMace Portfolio
+title: "Portfolio NM"
 description: "Applying institutional risk management principles to DeFi portfolios and CLMM market making."
-email: 
 
-# Paramètres d'URL (Conservés tels quels)
+# Paramètres d'URL
 url: "https://nicomace.github.io"
-baseurl: "/testDeFi"
+baseurl: "/DeFi"
 
-# Thème : Passage à Just the Docs
+# Thème
 remote_theme: just-the-docs/just-the-docs
 
-# Navigation et Recherche (Spécifiques à Just the Docs)
-nav_enabled: true
-search_enabled: true
-search_tokenizer_separator: /[\s\-/]+/
+# Fix pour le Menu : Forcer Jekyll à inclure tes dossiers de contenu
+# Si tes fichiers sont dans "_pages", on dit à Jekyll de ne pas les ignorer
+include:
+  - _pages
+  - project 
 
-# Configuration de la charte graphique (Équivalent au skin "dark")
+# Configuration de la navigation
+nav_enabled: true
+#nav_external_links:
+  #- title: "GitHub Repo"
+  #  url: https://github.com/nicomace/testDeFi
+
+# Recherche
+search_enabled: false
+
+# Look & Feel
 color_scheme: dark 
 
 # Build settings
 markdown: kramdown
-permalink: /:categories/:title/
+# Attention : Just the Docs préfère souvent les permaliens simples
+permalink: pretty
 
 # Plugins
-# Note: Just the Docs gère nativement beaucoup de choses, 
-# mais on garde l'essentiel.
 plugins:
   - jekyll-seo-tag
+  - jekyll-remote-theme
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
 
-# Configuration du pied de page (Just the Docs style)
-footer_content: "Copyright &copy; 2025 Nicolas Macé. Construit avec Just the Docs."
+# Pied de page
+footer_content: "Copyright &copy; 2026 Nicolas Macé."
 
-# Liens sociaux pour le menu latéral (Sidebar)
+# Liens rapides en haut de la sidebar
 aux_links:
   "Linkedin": "https://www.linkedin.com/in/macenicolas/"
-  "GitHub": "https://github.com/nicomace"
-  "Twitter": "https://x.com/niclos96"
+  "X": "https://x.com/niclos96"
+  #"GitHub": "https://github.com/nicomace/testDeFi"
 
-# Paramètres par défaut des pages
+# Paramètres par défaut
 defaults:
   - scope:
       path: ""
     values:
-      layout: default # Changement de 'single' à 'default'
+      layout: default
+
+sass:
+  style: compressed
+  
+# Just the Docs settings
+just_the_docs:
+  # Permet d'injecter des composants personnalisés
+  collections:
+    setup:
+      nav_exclude: true
+      
+  typekit_id: 
+  search_enabled: false
+    # On s'assure que le footer n'affiche que votre texte
+  last_edit_enabled: false
