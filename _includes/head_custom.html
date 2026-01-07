@@ -41,34 +41,26 @@
 
  
 
-  /* 1. Centrer le titre du site */
-  .site-title {
-    justify-content: center !important;
-    text-align: center !important;
-    padding-left: 0 !important; /* On retire le padding par défaut pour un vrai centrage */
-    margin-bottom: 20px !important;
-  }
-
-  /* 2. Centrer les liens de navigation */
+  /* 1. On garde l'alignement à gauche mais on décale tout le bloc */
   .nav-list {
-    text-align: center !important;
-    padding-left: 0 !important;
+    text-align: left !important;
+    padding-left: 40px !important; /* Augmente ce chiffre pour décaler vers la droite */
   }
 
-  /* 3. Ajuster les éléments de la liste pour qu'ils soient centrés */
-  .nav-list-item {
-    text-align: center !important;
+  /* 2. On aligne le titre sur le même retrait */
+  .site-title {
+    justify-content: flex-start !important;
+    padding-left: 40px !important; /* Doit être identique au padding-left de .nav-list */
+    margin-bottom: 30px !important;
   }
 
-  /* 4. Retirer les puces ou décalages éventuels sur les liens */
-  .nav-list-link {
-    display: inline-block !important; /* Permet au text-align de fonctionner */
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+  /* 3. On s'assure que les liens ne sont pas centrés individuellement */
+  .nav-list-item, .nav-list-link {
+    text-align: left !important;
   }
 
-  /* 5. Si tu as des sous-menus (comme "DeFi Risk..."), on les centre aussi */
+  /* 4. On gère l'espace pour les flèches de sous-menus */
   .nav-list-expander {
-    right: 10px !important; /* Repositionne la petite flèche sur le côté */
+    right: 20px !important;
   }
 </style>
