@@ -18,8 +18,6 @@ We introduce this module as an operational monitoring layer built to manage idle
 ---
 
 ## Purpose
-{: .no_toc .text-delta }
-
 -	What is the status of the portfolio?
 -	Do I have inactive positions?
 -	What is the opportunity cost?
@@ -53,11 +51,6 @@ When talking about fast decision-making, the rules need to be forward: time-base
 ---
 
 ## Limitations
-Ce module exclut délibérément certains risques pour rester focalisé sur l'opérationnel :
-- **Impermanent Loss** : Considéré comme inhérent à la structure AMM. Nous comparons ici l'efficacité de la stratégie LP, pas par rapport au HODL.
-- **Drawdowns Directionnels** : L'exposition de l'inventaire est gérée séparément.
-- **Hedging** : Les stratégies de couverture pour le drift d'inventaire sont identifiées comme une extension future du framework.
-
 This module deliberately excludes some risks such as:
 - **Impermanent Loss**: Inherent to AMM structure. We especially focus on LP strategies here, so no need to compare with HODL.
 - **Directional drawdowns**: Caused by inventory exposure, it is intentionally outside the current scope.
