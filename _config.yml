@@ -4,7 +4,7 @@ description: "Applying institutional risk management principles to DeFi portfoli
 
 # Paramètres d'URL
 url: "https://nicomace.github.io"
-baseurl: "/testDeFi"
+baseurl: "/DeFi"
 
 # Thème
 remote_theme: just-the-docs/just-the-docs
