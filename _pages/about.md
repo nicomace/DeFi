@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "About"
-nav_order: 10  # Un nombre élevé pour le placer à la fin du menu
+# nav_order: 10  # Un nombre élevé pour le placer à la fin du menu
 ---
 
 # About Me
