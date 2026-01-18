@@ -9,5 +9,5 @@ main:
       - title: "Performance"
         url: /project/performance/
 
- # - title: "About"
-  #  url: /about/
+  - title: "About"
+    url: /about/
