@@ -50,3 +50,25 @@ Alongside my professional experience, I have been actively involved in **DeFi an
 ---
 
 
+## Curriculum Vitae
+This CV summarizes my background across **TradFi market infrastructure** and **DeFi risk & analytics**.
+
+<p class="cv-actions">
+  <a class="btn btn-primary" href="{{ site.baseurl }}/assets/images/CryptoCV.pdf" target="_blank" rel="noopener">
+    Open PDF
+  </a>
+  <a class="btn" href="{{ site.baseurl }}/assets/images/DeFiResume.pdf" download>
+    Download
+  </a>
+</p>
+
+<div class="cv-container" style="width: 100%; height: 800px; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <iframe
+    src="{{ site.baseurl }}/assets/images/DeFiResume.pdf"
+    width="100%"
+    height="100%"
+    style="border: none;"
+    loading="lazy"
+    title="Nicolas Macé CV">
+  </iframe>
+</div>
